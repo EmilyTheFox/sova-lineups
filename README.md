@@ -1,8 +1,37 @@
-# Getting Started with Create React App
+# SovaLineups (A Valorant website)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This site is a hobby project, it's goal being to both teach everyone helping in development about making apps in React and teaching visitors about important Sova lineups in RiotGame's Valorant.
+The site is build using React and TypeScript, other than those this project is very conservative about adding new tools as to not overcomplicate what is in nature a simple website documenting some player ideas
 
-## Available Scripts
+# Demo
+
+## Live Site: [SovaLineups.com](https://sovalineups.com/)
+## Example Image:
+![alt Example](https://i.imgur.com/KFe5cFW.png)
+
+## General Use
+
+The site is meant to be very simple to use. Teaching it's users new lineups in a couple steps
+1. Select which map you want to learn Sova lineups for by either selecting a map in the navigation dropdown or by clicking the map's icon at the bottom of the home page
+2. Look for a lineup you want to learn and click on it
+3. Read the text, look at the images and if desired watch the short under 30 second long video of us executing the lineup in game
+
+## Roadmap
+
+December 2022: Launch the rework of the site, having Emily pick up the development where Brandon Joe left it. The goal at this time is simply to refactor the entire website without adding much new content
+January 2023: Improve the QoL of the site, (fixing issues if they are still present after the refactor) like not being able to directly go to maps from the URL, not being able to unselect filters and mobile responsiveness
+February 2023: Add more content to the site, goal being 30-50 lineups for each of the 8 (or however many at the time) maps, ordered in a logical way to learn them and being fully filterable on tags & name
+March 2023: Add a minimap similar to the one shown in game when pressing M, with each lineup marked on it, so a user can easily find lineups for the spots they want to add to their arsenal of lineups
+
+## Credits
+
+Credit where credit is due, this project is possible because of two people.
+
+Brandon Joe, an amazing front-end developer who came up with the idea, made the original site's code and is still responsible for most of the design. Without Brandon this site would've never existed. You can find Brandon's work at https://brandonjoe.com/\
+&\
+Emily, a back-end developer who's usually focused on PHP & C# but came across this website while playing Valorant and wanted to breathe new live into it by the end of 2022 after seeing the site hadn't been updated for 2 years
+
+## React Scripts
 
 In the project directory, you can run:
 
@@ -29,18 +58,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Learn More About React
 
 To learn React, check out the [React documentation](https://reactjs.org/).
