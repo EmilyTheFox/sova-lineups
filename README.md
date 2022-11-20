@@ -7,7 +7,7 @@ The site is build using React and TypeScript, other than those this project is v
 
 ## Live Site: [SovaLineups.com](https://sovalineups.com/)
 ## Example Image:
-![alt Example](https://i.imgur.com/KFe5cFW.png)
+![alt Example](https://i.imgur.com/xODK6GU.png)
 
 ## General Use
 
