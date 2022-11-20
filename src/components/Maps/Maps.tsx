@@ -12,7 +12,7 @@ import map_icebox from '../../assets/map_icebox.png';
 import map_pearl from '../../assets/map_pearl.png';
 import map_split from '../../assets/map_split.png';
 
-function Maps() {
+function Maps(props: { withDescription?: boolean }) {
     return (
         <div className={classes.container}>
             <div className={classes.main}>
@@ -22,9 +22,16 @@ function Maps() {
                     <div className={classes.whiteline_left} />
                     <div className={classes.whiteline_right} />
                     <div className={classes.map_container}>
-                        <div className={classes.map_title} >
-                            <h1 className={classes.title}>Maps</h1>
-                        </div>
+                        {
+                            props.withDescription
+                                ? <div className={classes.map_title} >
+                                    <h1 className={`${classes.title_with_description} ${classes.title}`}>Maps</h1>
+                                    <p className={classes.maps_description}>Select a map below to start learning any of it's dozens of lineups for it. Lineups are ordered from most essential to most specific so it's recommended learn them from top to bottom.</p>
+                                </div>
+                                : <div className={classes.map_title} >
+                                    <h1 className={classes.title}>Maps</h1>
+                                </div>
+                        }
                         <div className={classes.map_wrapper}>
                             <Link className={classes.link} to={'/ascent'}>
                                 <Map title={'Ascent'} location={'Venice, Italy'} map={map_ascent} />

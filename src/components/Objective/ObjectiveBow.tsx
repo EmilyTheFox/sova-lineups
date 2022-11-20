@@ -56,7 +56,7 @@ function ObjectiveBow() {
                         Sova's recon dart is your most important ability that should be used as often as possible. Therefore
                         lineups should be easily replicable. They should wedge you into a corner and align your crosshair or HUD
                         to execute quick, repeatable and reliable shots. Recon darts should scan as many potential hiding spots while
-                        not exposing you to enemy fire as you shoot it.
+                        not exposing you to enemy fire as you shoot them.
                         <br /><br />
                         But scanning important angles isn't everything. What's the point of scanning an area where someone holding can
                         easily lose line of sight of your dart before it lands? Or worse, shoot the dart before it scans with little effort.
