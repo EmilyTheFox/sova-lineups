@@ -14,8 +14,8 @@ function Nav() {
                     </Link>
                 </li>
                 <li>
-                    <div className={classes.dropdown}>
-                        <button className={`${classes.dropbtn}`}>
+                    <Link to={'/maps'} className={classes.dropdown}>
+                        <button className={`${classes.dropbtn} ${window.location.pathname === '/maps' ? classes.navactive : ''}`}>
                             <p>Maps</p>
                         </button>
                         <div className={classes.dropdowncontent}>
@@ -44,7 +44,7 @@ function Nav() {
                                 <h1>08 &nbsp;//&nbsp; Split</h1>
                             </Link>
                         </div>
-                    </div>
+                    </Link>
                 </li>
                 <li>
                     <Link className={`${classes.links} ${window.location.pathname === '/logs' ? classes.navactive : ''}`} to={'/logs'}>

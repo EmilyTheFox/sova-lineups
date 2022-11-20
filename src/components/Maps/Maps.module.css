@@ -2,9 +2,8 @@
     position: relative;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    display: flex;
+    flex-grow: 1;
     background: rgb(15, 25, 35);
 }
 
@@ -42,7 +41,7 @@
     justify-content: space-around;
     height: 100%;
 
-    margin-bottom: 10rem;
+    margin-bottom: 5.5rem;
 }
 
 .map_wrapper::before {
@@ -104,7 +103,6 @@
     border-right: 2px solid rgb(119, 119, 119);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border-top: 1px solid rgb(131, 131, 131);
 }
 
 .map_title {
@@ -121,6 +119,17 @@
     margin-left: 7.5rem;
     position: relative;
     border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.title_with_description {
+    margin-top: -5px !important;
+    margin-bottom: -5px !important;
+}
+
+.maps_description {
+    color: rgb(236, 232, 225);
+    margin-left: 7.5rem;
+    font-size: 1.6rem;
 }
 
 .map_title::before {

@@ -1,14 +1,11 @@
 import React, { useRef } from 'react';
 import classes from './ObjectiveRecon.module.css';
-import ReactPlayer from 'react-player';
 import { Link } from 'react-router-dom';
-
-import ObjectiveBow from './ObjectiveBow';
-
-import reconIcon from '../../assets/reconIcon.png';
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
-
+import VideoPlayer from '../VideoPlayer/VideoPlayer';
+import reconIcon from '../../assets/reconIcon.png';
+import ObjectiveBow from './ObjectiveBow';
 
 function ObjectiveRecon() {
 
@@ -90,7 +87,7 @@ function ObjectiveRecon() {
                     <div className={classes.first_section}>
                         <div className={classes.first_section_left}>
                             <div className={classes.first_text}>
-                                Ever since release Sova has been the best agent for gathering information for his team. In a coordinated push, a well placed recon dart will tip the scales in your team's favor; it'll either disclose multiple enemy locations, or show you exactly where they can't be and limit the angles you'll need to check. A poorly placed dart however will not only reveal little area, but also potentially bait your team into thinking an area is clear. The purpose of this site is to teach you all the quality darts you'll need to help your team to victory.
+                                Ever since release Sova has been the best agent for gathering information in Valorant. In a coordinated push, a well placed recon dart will tip the scales in your team's favor; it'll either disclose multiple enemy locations, or show you exactly where they can't be and limit the angles you'll need to check. A poorly placed dart however will not only reveal little area, but also potentially bait your team into thinking an area is clear. The purpose of this site is to teach you all the quality darts you'll need to help your team to victory.
                             </div>
                         </div>
                         <div className={classes.first_section_right}>
@@ -110,20 +107,14 @@ function ObjectiveRecon() {
                                 <div className={classes.video_text}>Learn this lineup... </div>
                                 <div className={classes.arrow} />
                             </Link>
-                            <ReactPlayer
+                            <VideoPlayer
                                 className={classes.video}
-                                style={{
-                                    width: '100%',
-                                    height: '100%',
-                                    top: '1px'
-                                }}
-                                url="https://i.imgur.com/LyUfcpQ.mp4"
+                                url={"https://i.imgur.com/LyUfcpQ.mp4"}
                                 muted={true}
                                 loop={true}
                                 playing={true}
-                                volume={0}
+                                playsInline={true}
                                 controls={false}
-                                playsinline={true}
                             />
                         </div>
                     </div>

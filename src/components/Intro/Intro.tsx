@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
 import classes from './Intro.module.css';
 import sova_character_image from '../../assets/sova_character_image.png';
+import VideoPlayer from '../VideoPlayer/VideoPlayer';
 
 function Home() {
     return (
@@ -32,20 +32,18 @@ function Home() {
                                 walls.
                             </p>
                             <div className={classes.video_player}>
-                                <ReactPlayer
-                                    width="300"
+                                <VideoPlayer
                                     className={classes.video}
                                     url={"https://i.imgur.com/Uqp8GCX.mp4"}
                                     muted={true}
                                     loop={true}
                                     playing={true}
-                                    playsinline={true}
+                                    playsInline={true}
                                     controls={false}
                                 />
                             </div>
                         </div>
                     </div>
-
                     <div className={classes.right}>
                         <div className={classes.sova_image_container}>
                             <div className={classes.block} />
