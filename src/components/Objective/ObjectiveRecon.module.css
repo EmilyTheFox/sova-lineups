@@ -1,9 +1,6 @@
 .container {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     position: relative;
     background: rgb(236, 232, 225);
     background-size: cover;
