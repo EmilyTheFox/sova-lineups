@@ -27,9 +27,9 @@ March 2023: Add a minimap similar to the one shown in game when pressing M, with
 
 Credit where credit is due, this project is possible because of two people.
 
-Brandon Joe, an amazing front-end developer who came up with the idea, made the original site's code and is still responsible for most of the design. Without Brandon this site would've never existed. You can find Brandon's work at https://brandonjoe.com/\
+Brandon Joe, an amazing front-end developer who came up with the idea, made the original site's code and is still responsible for most of the design. Without Brandon this site would've never existed. You can find Brandon's work at https://brandonjoe.com/  
 &\
-Emily, a back-end developer who's usually focused on PHP & C# but came across this website while playing Valorant and wanted to breathe new live into it by the end of 2022 after seeing the site hadn't been updated for 2 years
+EmilyTheFox#3720, a back-end developer who's usually focused on PHP & C# but came across this website while playing Valorant and wanted to breathe new live into it by the end of 2022 after seeing the site hadn't been updated for 2 years
 
 ## React Scripts
 

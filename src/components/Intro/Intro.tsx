@@ -11,7 +11,7 @@ function Home() {
                 <div className={classes.background_text}>vALORANT</div>
                 <div className={classes.header}>
                     <h1 className={classes.title}>
-                        <span>03/12 &nbsp;&nbsp; //</span>
+                        <span>AGENT 03/20 &nbsp;&nbsp; //</span>
                         <span>INITIATOR</span>{' '}
                     </h1>
                 </div>
