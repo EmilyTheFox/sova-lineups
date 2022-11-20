@@ -1,0 +1,17 @@
+.container {
+    padding: 1rem 1rem;
+}
+
+.container:nth-child(odd) {
+    background-color: rgba(68, 68, 68, 0.473);
+}
+
+.log {
+    margin: 0;
+    color: rgb(214, 214, 214);
+    font-size: 1.6rem;
+}
+
+h1.log {
+    margin-bottom: 0.5rem;
+}

@@ -24,6 +24,17 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+#root {
+    min-height: 100%;
+    display: flex;
+}
+
+#root>div {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
