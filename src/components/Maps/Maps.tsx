@@ -26,7 +26,7 @@ function Maps(props: { withDescription?: boolean }) {
                             props.withDescription
                                 ? <div className={classes.map_title} >
                                     <h1 className={`${classes.title_with_description} ${classes.title}`}>Maps</h1>
-                                    <p className={classes.maps_description}>Select a map below to start learning any of it's dozens of lineups for it. Lineups are ordered from most essential to most specific so it's recommended learn them from top to bottom.</p>
+                                    <p className={classes.maps_description}>Select a map below to start learning any of it's dozens of lineups. Lineups are ordered from most essential to most specific so it's recommended learn them from top to bottom.</p>
                                 </div>
                                 : <div className={classes.map_title} >
                                     <h1 className={classes.title}>Maps</h1>
