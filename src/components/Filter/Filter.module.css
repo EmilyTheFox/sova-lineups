@@ -1,5 +1,6 @@
 .container {
     width: 80%;
+    max-width: 330px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -23,10 +24,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: column;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -36,6 +37,38 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-bottom: 1rem;
+}
+
+.filterset {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.filterset_title {
+    font-family: "GoodTimes";
+    font-weight: 300;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 45%;
+
+}
+
+.filterset_title>h1 {
+    margin: 0;
+    text-align: left;
+}
+
+.filterset_filters {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
 }
 
 .title {
@@ -75,8 +108,10 @@
 }
 
 .filter {
-
-    padding: 1px 3px 1px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 8px;
     border-radius: 3px;
     margin: 0 4px 3px 4px;
     color: white;

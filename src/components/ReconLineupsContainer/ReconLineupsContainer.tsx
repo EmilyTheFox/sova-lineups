@@ -7,7 +7,6 @@ import classes from './ReconLineupsContainer.module.css';
 import gsap, { Expo } from 'gsap';
 
 import ascent_data from '../../data/reconLineups/ascent';
-import { useEffectOnce, useIntersection } from 'react-use';
 
 function ReconLineupsContainer(props: { map: ValorantMap }) {
 
@@ -26,7 +25,7 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
 
         fadeInLineupsList(document.getElementById('lineupsList'));
         fadeInFilterList(document.getElementById('filterList'));
-    }, [])
+    }, [props.map]);
 
     const fadeInLineupsList = (element: GSAPTweenTarget) => {
         gsap.fromTo(element, {
@@ -92,7 +91,7 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
                     <div className={classes.lineup_selector_main} id="lineupsList">
                         {
                             lineupList.map((lineup: ReconLineup, i) => (
-                                <ReconLineupItem lineup={lineup} isActive={false} key={i} />
+                                <ReconLineupItem lineup={lineup} isActive={false} prefix={`${i + 1}`} key={i} />
                             ))
                         }
                     </div>

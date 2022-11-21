@@ -43,48 +43,69 @@ function Filter() {
                 <span>Filters</span>
             </h5>
             <div className={classes.main}>
-                <h1
-                    className={classes.filter}
-                    style={{ backgroundColor: filterList.easy ? 'rgb(98, 163, 29)' : 'rgb(88, 88, 88)' }}
-                    onClick={() => toggleFilter(FilterValue.EASY)}
-                >
-                    Easy
-                </h1>
-                <h1
-                    className={classes.filter}
-                    style={{ backgroundColor: filterList.medium ? 'rgb(163, 157, 94)' : 'rgb(88, 88, 88)' }}
-                    onClick={() => toggleFilter(FilterValue.MEDIUM)}
-                >
-                    Medium
-                </h1>
-                <h1
-                    className={classes.filter}
-                    style={{ backgroundColor: filterList.hard ? 'rgb(175, 41, 41)' : 'rgb(88, 88, 88)' }}
-                    onClick={() => toggleFilter(FilterValue.HARD)}
-                >
-                    Hard
-                </h1>
-                <h1
-                    className={classes.filter}
-                    style={{ backgroundColor: filterList.essential ? 'rgb(53,142,197)' : 'rgb(88, 88, 88)' }}
-                    onClick={() => toggleFilter(FilterValue.ESSENTIAL)}
-                >
-                    Essential
-                </h1>
-                <h1
-                    className={classes.filter}
-                    style={{ backgroundColor: filterList.attacker ? 'rgb(255, 123, 0)' : 'rgb(88, 88, 88)' }}
-                    onClick={() => toggleFilter(FilterValue.ATTACKER)}
-                >
-                    Attacking
-                </h1>
-                <h1
-                    className={classes.filter}
-                    style={{ backgroundColor: filterList.defender ? 'rgb(99,56,126)' : 'rgb(88, 88, 88)' }}
-                    onClick={() => toggleFilter(FilterValue.DEFENDER)}
-                >
-                    Defending
-                </h1>
+                <div className={classes.filterset}>
+                    <div className={classes.filterset_title}>
+                        <h1>Difficulty</h1>
+                    </div>
+                    <div className={classes.filterset_filters}>
+                        <h1
+                            className={classes.filter}
+                            style={{ backgroundColor: filterList.easy ? 'rgb(98, 163, 29)' : 'rgb(88, 88, 88)' }}
+                            onClick={() => toggleFilter(FilterValue.EASY)}
+                        >
+                            Easy
+                        </h1>
+                        <h1
+                            className={classes.filter}
+                            style={{ backgroundColor: filterList.medium ? 'rgb(163, 157, 94)' : 'rgb(88, 88, 88)' }}
+                            onClick={() => toggleFilter(FilterValue.MEDIUM)}
+                        >
+                            Medium
+                        </h1>
+                        <h1
+                            className={classes.filter}
+                            style={{ backgroundColor: filterList.hard ? 'rgb(175, 41, 41)' : 'rgb(88, 88, 88)' }}
+                            onClick={() => toggleFilter(FilterValue.HARD)}
+                        >
+                            Hard
+                        </h1>
+                    </div>
+                </div>
+                <div className={classes.filterset}>
+                    <div className={classes.filterset_title}>
+                        <h1>Usefulness</h1>
+                    </div>
+                    <div className={classes.filterset_filters}>
+                        <h1
+                            className={classes.filter}
+                            style={{ backgroundColor: filterList.essential ? 'rgb(53,142,197)' : 'rgb(88, 88, 88)' }}
+                            onClick={() => toggleFilter(FilterValue.ESSENTIAL)}
+                        >
+                            Essential
+                        </h1>
+                    </div>
+                </div>
+                <div className={classes.filterset}>
+                    <div className={classes.filterset_title}>
+                        <h1>Side</h1>
+                    </div>
+                    <div className={classes.filterset_filters}>
+                        <h1
+                            className={classes.filter}
+                            style={{ backgroundColor: filterList.attacker ? 'rgb(255, 123, 0)' : 'rgb(88, 88, 88)' }}
+                            onClick={() => toggleFilter(FilterValue.ATTACKER)}
+                        >
+                            Attacking
+                        </h1>
+                        <h1
+                            className={classes.filter}
+                            style={{ backgroundColor: filterList.defender ? 'rgb(99,56,126)' : 'rgb(88, 88, 88)' }}
+                            onClick={() => toggleFilter(FilterValue.DEFENDER)}
+                        >
+                            Defending
+                        </h1>
+                    </div>
+                </div>
             </div>
         </div>
     );
