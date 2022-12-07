@@ -53,7 +53,7 @@ function ObjectiveBow() {
                 </div>
                 <div className={classes.right}>
                     <p ref={sectionRefBowText} className={classes.text}>
-                        Sova's recon dart is your most important ability that should be used as often as possible. Therefore
+                        Sova's recon dart is your most important ability and should be used as often as possible. Therefore
                         lineups should be easily replicable. They should wedge you into a corner and align your crosshair or HUD
                         to execute quick, repeatable and reliable shots. Recon darts should scan as many potential hiding spots while
                         not exposing you to enemy fire as you shoot them.
