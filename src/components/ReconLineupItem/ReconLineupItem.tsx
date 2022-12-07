@@ -1,7 +1,6 @@
-import React, { useContext, useEffect, useRef } from 'react';
-import { Lineup, LineupDifficulty, LineupUsecase } from '../../interfaces/Lineup';
+import React, { useContext } from 'react';
+import { Lineup, LineupUsecase } from '../../interfaces/Lineup';
 import Difficulty from '../LineupBadges/Difficulty/Difficulty';
-import Usefulness from '../LineupBadges/Usecase/Usecase';
 import Side from '../LineupBadges/Side/Side';
 import classes from './ReconLineupItem.module.css';
 import { MapContext } from '../../MapContext';
@@ -31,8 +30,8 @@ function ReconLineupItem(props: { lineup: Lineup, isActive: boolean, prefix: str
                         hasAtLeastOneUseCase = true;
                     }
                     break;
-                case LineupUsecase.RoundStart:
-                    if (props.lineup.usecase.roundStart) {
+                case LineupUsecase.Faking:
+                    if (props.lineup.usecase.faking) {
                         hasAtLeastOneUseCase = true;
                     }
                     break;
@@ -55,41 +54,30 @@ function ReconLineupItem(props: { lineup: Lineup, isActive: boolean, prefix: str
         }
     }
 
+    function setActiveLineup(lineup: Lineup) {
+        let newState = JSON.parse(JSON.stringify(mapContext.mapState));
 
-    // function toggleFilter(filter: LineupDifficulty | LineupUsecase | LineupSide, filterCategory: filterCategory) {
-    //     let newState = mapContext.mapState;
+        newState.activeLineup = lineup;
 
-    //     const stateFilterCategory: any[] = newState.filters[filterCategory];
-
-    //     if (stateFilterCategory.includes(filter)) {
-    //         stateFilterCategory.splice(stateFilterCategory.indexOf(filter), 1);
-    //     } else {
-    //         stateFilterCategory.push(filter);
-    //     }
-
-    //     newState.filters[filterCategory] = stateFilterCategory;
-
-    //     mapContext.setMapState(newState)
-    //     setTriggerFilterUpdate(triggerFilterUpdate + 1);
-    // }
-
-
+        mapContext.setMapState(newState);
+    }
 
     return (
         <>
             {
                 !hidden ?
-                    <div className={`${classes.container} ${props.isActive ? classes.active : ''} ${hidden ? classes.hidden : ''}`}>
+                    <div className={`${classes.container} ${props.isActive ? classes.active : ''} ${hidden ? classes.hidden : ''}`}
+                        onClick={() => { setActiveLineup(props.lineup) }}>
                         <div className={classes.background}></div>
                         <div className={classes.main}>
-                            <h1 className={classes.title}>{props.prefix.length > 1 ? `${props.prefix}` : `0${props.prefix}`} // {props.lineup.title}</h1>
+                            <h1 className={classes.title}>{props.prefix.length > 1 ? `${props.prefix}` : `0${props.prefix}`} {'//'} {props.lineup.title}</h1>
                             <div className={classes.filters}>
                                 <Difficulty difficulty={props.lineup.difficulty} />
                                 {
                                     props.lineup.usecase.essential ? <Usecase usecase={LineupUsecase.Essential} /> : undefined
                                 }
                                 {
-                                    props.lineup.usecase.roundStart ? <Usecase usecase={LineupUsecase.RoundStart} /> : undefined
+                                    props.lineup.usecase.faking ? <Usecase usecase={LineupUsecase.Faking} /> : undefined
                                 }
                                 {
                                     props.lineup.usecase.retake ? <Usecase usecase={LineupUsecase.Retake} /> : undefined

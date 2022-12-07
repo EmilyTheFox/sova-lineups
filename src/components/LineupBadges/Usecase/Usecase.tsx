@@ -9,8 +9,8 @@ function Usecase(props: { usecase?: LineupUsecase }) {
         case LineupUsecase.Essential:
             color = classes.essential;
             break;
-        case LineupUsecase.RoundStart:
-            color = classes.roundstart;
+        case LineupUsecase.Faking:
+            color = classes.faking;
             break;
         case LineupUsecase.Retake:
             color = classes.retake;
@@ -21,7 +21,7 @@ function Usecase(props: { usecase?: LineupUsecase }) {
         <>
             {props.usecase ? (
                 <div className={classes.container}>
-                    <h1 className={`${classes.usecase_badge} ${color}`}>{props.usecase === LineupUsecase.RoundStart ? 'Start' : props.usecase}</h1>
+                    <h1 className={`${classes.usecase_badge} ${color}`}>{props.usecase}</h1>
                 </div>
             ) : null}
         </>

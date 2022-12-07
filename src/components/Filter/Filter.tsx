@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { LineupDifficulty, LineupSide, LineupUsecase } from '../../interfaces/Lineup';
-import { ValorantMap } from '../../interfaces/ValorantMap';
 import { MapContext } from '../../MapContext';
 import classes from './Filter.module.css';
 
@@ -86,10 +85,10 @@ function Filter() {
                         </h1>
                         <h1
                             className={classes.filter}
-                            style={{ backgroundColor: filterList.usecase.includes(LineupUsecase.RoundStart) ? 'rgb(179,175,56)' : 'rgb(88, 88, 88)' }}
-                            onClick={() => toggleFilter(LineupUsecase.RoundStart, filterCategory.Usecase)}
+                            style={{ backgroundColor: filterList.usecase.includes(LineupUsecase.Faking) ? 'rgb(179,175,56)' : 'rgb(88, 88, 88)' }}
+                            onClick={() => toggleFilter(LineupUsecase.Faking, filterCategory.Usecase)}
                         >
-                            Start
+                            Faking
                         </h1>
                         <h1
                             className={classes.filter}

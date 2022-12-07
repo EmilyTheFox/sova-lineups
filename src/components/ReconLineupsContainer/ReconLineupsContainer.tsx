@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Lineup } from '../../interfaces/Lineup';
 import { ValorantMap } from '../../interfaces/ValorantMap';
 import Filter from '../Filter/Filter';
@@ -7,7 +7,10 @@ import classes from './ReconLineupsContainer.module.css';
 import gsap, { Expo } from 'gsap';
 
 import ascent_data from '../../data/reconLineups/ascent';
+import bind_data from '../../data/reconLineups/bind';
 import { MapContext } from '../../MapContext';
+import ReconLineupDetails from '../ReconLineupDetails/ReconLineupDetails';
+import LineupMapHeader from '../LineupMapHeader/LineupMapHeader';
 
 function ReconLineupsContainer(props: { map: ValorantMap }) {
 
@@ -18,15 +21,22 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
     const setLineups = () => {
         let newState = mapContext.mapState;
 
-        newState.lineups = ascent_data;
+        newState.map = props.map;
 
         switch (props.map) {
             case ValorantMap.Ascent:
                 newState.lineups = ascent_data;
                 break;
-
-            default:
+            case ValorantMap.Bind:
+                newState.lineups = bind_data;
                 break;
+            default:
+                newState.lineups = []
+                break;
+        }
+
+        if (Object.keys(newState.activeLineup).length === 0 || !newState.lineups.includes(newState.activeLineup as Lineup)) {
+            newState.activeLineup = newState.lineups.length > 0 ? newState.lineups[0] : {};
         }
 
         mapContext.setMapState(newState);
@@ -34,8 +44,6 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
     setLineups();
 
     useEffect(() => {
-        setLineups();
-
         fadeInLineupsList(document.getElementById('lineupsList'));
         fadeInFilterList(document.getElementById('filterList'));
     }, [props.map]);
@@ -103,32 +111,22 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
 
                     <div className={classes.lineup_selector_main} id="lineupsList">
                         {
-                            mapContext.mapState.lineups.map((lineup: Lineup, i) => (
-                                <ReconLineupItem lineup={lineup} isActive={false} prefix={`${i + 1}`} key={i} />
-                            ))
+                            mapContext.mapState.lineups.length > 0 ? (
+                                mapContext.mapState.lineups.map((lineup: Lineup, i) => (
+                                    <ReconLineupItem lineup={lineup} isActive={lineup === mapContext.mapState.activeLineup} prefix={`${i + 1}`} key={i} />
+                                ))
+                            ) : (
+                                <div style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                    <h1 style={{ color: 'whitesmoke', fontWeight: '600', fontSize: '3rem', padding: '5%' }}>There aren't any lineups here yet for <span style={{ textTransform: 'capitalize', color: 'rgb(255, 70, 85)' }}>{props.map}</span>. We will add some soon!</h1>
+                                </div>
+                            )
                         }
                     </div>
                 </div>
 
                 <div className={classes.lineup_detail}>
-                    {/* <AppConsumer>
-                        {(value) => {
-                            return (
-                                <MapHeader
-                                    mapTitle={value.currentMap}
-                                />
-                            );
-                        }}
-                    </AppConsumer>
-                    <AppConsumer>
-                        {(value) => {
-                            return (
-                                <div ref={(div) => (this.detailItem = div)} className={classes.lineupDetailItem}>
-                                    <LineupDetail lineupdetails={value.detailLineup} />
-                                </div>
-                            );
-                        }}
-                    </AppConsumer> */}
+                    <LineupMapHeader map={mapContext.mapState.map}></LineupMapHeader>
+                    <ReconLineupDetails lineup={mapContext.mapState.activeLineup}></ReconLineupDetails>
                 </div>
             </div>
         </div>

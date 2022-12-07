@@ -5,7 +5,7 @@ export interface Lineup {
     side: LineupSide,
     usecase: {
         essential: Boolean,
-        roundStart: Boolean,
+        faking: Boolean,
         retake: Boolean
     }
     map: string,
@@ -32,7 +32,7 @@ export enum LineupSide {
 export enum LineupUsecase {
     Essential = 'essential',
     Retake = 'retake',
-    RoundStart = 'round start'
+    Faking = 'faking'
 }
 
 export interface LineupImage {

@@ -1,4 +1,4 @@
-import { Lineup, LineupDifficulty, LineupSide, LineupUsecase } from "../../interfaces/Lineup";
+import { Lineup, LineupDifficulty, LineupSide } from "../../interfaces/Lineup";
 
 const ascent_data: Lineup[] = [
     {
@@ -8,7 +8,7 @@ const ascent_data: Lineup[] = [
         side: LineupSide.Defending,
         usecase: {
             essential: true,
-            roundStart: true,
+            faking: true,
             retake: true,
         },
         map: 'https://i.imgur.com/L8bSkrL.jpg',
@@ -31,13 +31,16 @@ const ascent_data: Lineup[] = [
         side: LineupSide.Defending,
         usecase: {
             essential: true,
-            roundStart: false,
+            faking: false,
             retake: false,
         },
         map: 'https://i.imgur.com/gM8Rm7X.jpg',
         result: "https://i.imgur.com/7nou3yY.png",
-        video: '431576892',
+        video: 'https://vimeo.com/431576892',
         images: [
+            {
+                link: 'https://i.imgur.com/fqeNnRT.png'
+            },
             {
                 link: 'https://i.imgur.com/fqeNnRT.png'
             }
@@ -53,12 +56,12 @@ const ascent_data: Lineup[] = [
         side: LineupSide.Defending,
         usecase: {
             essential: true,
-            roundStart: false,
+            faking: false,
             retake: false
         },
         map: 'https://i.imgur.com/sranZUu.jpg',
         result: 'https://i.imgur.com/2q1Ff50.png',
-        video: '431576817',
+        video: 'https://vimeo.com/431576817',
         images: [
             {
                 link: 'https://i.imgur.com/1MmBX0u.png'
@@ -75,12 +78,12 @@ const ascent_data: Lineup[] = [
         side: LineupSide.Defending,
         usecase: {
             essential: true,
-            roundStart: false,
+            faking: false,
             retake: false
         },
         map: 'https://i.imgur.com/H8KL2X9.jpg',
         result: 'https://i.imgur.com/9RrxFRD.png',
-        video: '431576644',
+        video: 'https://vimeo.com/431576644',
         images: [
             {
                 link: 'https://i.imgur.com/oKUZGU7.png'
@@ -97,12 +100,12 @@ const ascent_data: Lineup[] = [
         side: LineupSide.Attacking,
         usecase: {
             essential: false,
-            roundStart: false,
+            faking: false,
             retake: false
         },
         map: 'https://i.imgur.com/Ytvx1X7.jpg',
         result: 'https://i.imgur.com/TE4eThr.png',
-        video: '432419685',
+        video: 'https://vimeo.com/432419685',
         images: [
             {
                 link: 'https://i.imgur.com/UssEkeE.jpg'
@@ -119,12 +122,12 @@ const ascent_data: Lineup[] = [
         side: LineupSide.Attacking,
         usecase: {
             essential: true,
-            roundStart: false,
+            faking: false,
             retake: false
         },
         map: 'https://i.imgur.com/ebxttbg.jpg',
         result: 'https://i.imgur.com/XrDq3aU.png',
-        video: '432603212',
+        video: 'https://vimeo.com/432603212',
         images: [
             {
                 link: 'https://i.imgur.com/cxVPe6k.png'
