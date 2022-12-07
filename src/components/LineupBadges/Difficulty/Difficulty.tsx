@@ -1,18 +1,18 @@
 import React from 'react';
-import { ReconLineupDifficulty } from '../../../interfaces/ReconLineup';
+import { LineupDifficulty } from '../../../interfaces/Lineup';
 import classes from './Difficulty.module.css';
 
-function Difficulty(props: { difficulty: ReconLineupDifficulty }) {
+function Difficulty(props: { difficulty: LineupDifficulty }) {
 
     let color;
     switch (props.difficulty) {
-        case ReconLineupDifficulty.Easy:
+        case LineupDifficulty.Easy:
             color = classes.easy
             break;
-        case ReconLineupDifficulty.Medium:
+        case LineupDifficulty.Medium:
             color = classes.medium
             break;
-        case ReconLineupDifficulty.Hard:
+        case LineupDifficulty.Hard:
             color = classes.hard
             break;
     }

@@ -1,15 +1,15 @@
 import React from 'react';
-import { ReconLineupSide } from '../../../interfaces/ReconLineup';
+import { LineupSide } from '../../../interfaces/Lineup';
 import classes from './Side.module.css';
 
-function Side(props: { side?: ReconLineupSide }) {
+function Side(props: { side?: LineupSide }) {
 
     let color;
     switch (props.side) {
-        case ReconLineupSide.Attacking:
+        case LineupSide.Attacking:
             color = classes.attacking
             break;
-        case ReconLineupSide.Defending:
+        case LineupSide.Defending:
             color = classes.defending
             break;
     }

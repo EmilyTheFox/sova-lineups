@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import { ReconLineup } from '../../interfaces/ReconLineup';
+import React, { useContext, useEffect, useRef } from 'react';
+import { Lineup } from '../../interfaces/Lineup';
 import { ValorantMap } from '../../interfaces/ValorantMap';
 import Filter from '../Filter/Filter';
 import ReconLineupItem from '../ReconLineupItem/ReconLineupItem';
@@ -7,21 +7,34 @@ import classes from './ReconLineupsContainer.module.css';
 import gsap, { Expo } from 'gsap';
 
 import ascent_data from '../../data/reconLineups/ascent';
+import { MapContext } from '../../MapContext';
 
 function ReconLineupsContainer(props: { map: ValorantMap }) {
 
     let [sideLineupsOpen, setSideLineupsOpen] = React.useState(false);
-    let [lineupList, setLineupsList] = React.useState<ReconLineup[]>([]);
 
-    useEffect(() => {
+    const mapContext = useContext(MapContext);
+
+    const setLineups = () => {
+        let newState = mapContext.mapState;
+
+        newState.lineups = ascent_data;
+
         switch (props.map) {
             case ValorantMap.Ascent:
-                setLineupsList(ascent_data);
+                newState.lineups = ascent_data;
                 break;
 
             default:
                 break;
         }
+
+        mapContext.setMapState(newState);
+    }
+    setLineups();
+
+    useEffect(() => {
+        setLineups();
 
         fadeInLineupsList(document.getElementById('lineupsList'));
         fadeInFilterList(document.getElementById('filterList'));
@@ -90,7 +103,7 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
 
                     <div className={classes.lineup_selector_main} id="lineupsList">
                         {
-                            lineupList.map((lineup: ReconLineup, i) => (
+                            mapContext.mapState.lineups.map((lineup: Lineup, i) => (
                                 <ReconLineupItem lineup={lineup} isActive={false} prefix={`${i + 1}`} key={i} />
                             ))
                         }
