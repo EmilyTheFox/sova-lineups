@@ -15,32 +15,32 @@ function Nav() {
                 </li>
                 <li>
                     <div className={classes.dropdown}>
-                        <button className={`${classes.dropbtn} ${window.location.pathname === '/maps' ? classes.navactive : ''}`}>
+                        <Link to={'/maps'} className={`${classes.dropbtn} ${classes.links} ${window.location.pathname === '/maps' ? classes.navactive : ''}`}>
                             <p>Maps</p>
-                        </button>
+                        </Link>
                         <div className={classes.dropdowncontent}>
-                            <Link className={classes.link} to={'/ascent'}>
+                            <Link to={'/ascent'}>
                                 <h1>01 &nbsp;//&nbsp; Ascent</h1>
                             </Link>
-                            <Link className={classes.link} to={'/bind'}>
+                            <Link to={'/bind'}>
                                 <h1>02 &nbsp;//&nbsp; Bind</h1>
                             </Link>
-                            <Link className={classes.link} to={'/breeze'}>
+                            <Link to={'/breeze'}>
                                 <h1>03 &nbsp;//&nbsp; Breeze</h1>
                             </Link>
-                            <Link className={classes.link} to={'/fracture'}>
+                            <Link to={'/fracture'}>
                                 <h1>04 &nbsp;//&nbsp; Fracture</h1>
                             </Link>
-                            <Link className={classes.link} to={'/haven'}>
+                            <Link to={'/haven'}>
                                 <h1>05 &nbsp;//&nbsp; Haven</h1>
                             </Link>
-                            <Link className={classes.link} to={'/icebox'}>
+                            <Link to={'/icebox'}>
                                 <h1>06 &nbsp;//&nbsp; Icebox</h1>
                             </Link>
-                            <Link className={classes.link} to={'/pearl'}>
+                            <Link to={'/pearl'}>
                                 <h1>07 &nbsp;//&nbsp; Pearl</h1>
                             </Link>
-                            <Link className={classes.link} to={'/split'}>
+                            <Link to={'/split'}>
                                 <h1>08 &nbsp;//&nbsp; Split</h1>
                             </Link>
                         </div>

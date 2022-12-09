@@ -8,8 +8,8 @@ const ascent_data: Lineup[] = [
         side: LineupSide.Defending,
         usecase: {
             essential: true,
-            faking: true,
-            retake: true,
+            faking: false,
+            retake: false,
         },
         map: 'https://i.imgur.com/L8bSkrL.jpg',
         result: "https://i.imgur.com/b7rNGTg.png",
@@ -136,6 +136,166 @@ const ascent_data: Lineup[] = [
         bounces: 0,
         charges: 1,
         info: "Scans back of site, all round the metal box, close left and close right, as well as behind the wooden box. The only spots it does not scan is hell and heaven. Aim right where the pointy white thing is as shown in the picture."
+    },
+    {
+        id: 7,
+        title: 'A site from A main',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Attacking,
+        usecase: {
+            essential: true,
+            faking: false,
+            retake: false
+        },
+        map: 'https://i.imgur.com/NHJFiZU.png',
+        result: 'https://i.imgur.com/CgiNGYy.png',
+        video: '432419840',
+        images: [
+            {
+                link: 'https://i.imgur.com/uC5cJYL.png'
+            }
+        ],
+        bounces: 1,
+        charges: 2,
+        info: "Similar to the previous one, but it sacrifices the metal box for right side of heaven. Position yourself so that pipe on the wall is inbetween the door, then aim right at the bottom of the pipe. Careful since it leaves the left site unchecked."
+    },
+    {
+        id: 9,
+        title: 'A lobby/top mid from A site',
+        difficulty: LineupDifficulty.Medium,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false
+        },
+        map: 'https://i.imgur.com/Oft1ut7.jpg',
+        result: 'https://i.imgur.com/OrQeo7G.png',
+        video: '432604158',
+        images: [
+            {
+                link: 'https://i.imgur.com/mdkYGf4.jpg'
+            }
+        ],
+        bounces: 0,
+        charges: 1,
+        info: "This lineup will reach back of mid, as well as A lobby. Line up the bottom of your hud so that it's touching the top left hand side of the stone above the entrance."
+    },
+    {
+        id: 10,
+        title: 'Pizza/mid bottom from mid top',
+        difficulty: LineupDifficulty.Medium,
+        side: LineupSide.Attacking,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false
+        },
+        map: 'https://i.imgur.com/Ytvx1X7.jpg',
+        result: 'https://i.imgur.com/aGEmbKy.png',
+        video: '432603297',
+        images: [
+            {
+                link: 'https://i.imgur.com/Bz0yqHR.png'
+            },
+            {
+                link: 'https://i.imgur.com/OtRkGGn.png'
+            }
+        ],
+        bounces: 2,
+        charges: 3,
+        info: "An easier version of the lineup mentioned earlier, but it's easier for it to be shot down by someone defending. Mix it up with the previous mid dart. Align yourself against the back wall so that a slanted black line is showing. Then aim at the bottom part of that slant."
+    },
+    {
+        id: 11,
+        title: 'Hell from Rafters',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false
+        },
+        map: 'https://i.imgur.com/rwvtuFa.jpg',
+        result: 'https://i.imgur.com/Mq4GLEz.png',
+        video: '432604345',
+        images: [
+            {
+                link: ''
+            },
+            {
+                link: ''
+            }
+        ],
+        bounces: 2,
+        charges: 3,
+        info: "This is a retake dart for when you know someone's in hell. You can wallbang them once it scans. Aiming aimwhere on the green box should bounce it into hell, but make sure your position is align the the box."
+    },
+    {
+        id: 12,
+        title: 'Shed from B main',
+        difficulty: LineupDifficulty.Hard,
+        side: LineupSide.Attacking,
+        usecase: {
+            essential: true,
+            faking: false,
+            retake: false
+        },
+        map: 'https://i.imgur.com/ZUG4kbD.jpg',
+        result: 'https://i.imgur.com/915GyJx.png',
+        video: '432604471',
+        images: [
+            {
+                link: 'https://i.imgur.com/BjuiCGx.jpg'
+            }
+        ],
+        bounces: 1,
+        charges: 3,
+        info: "This is one of the few hard, yet essential darts here. It's a very powerful dart that scans shed, the alley on close left, as well as right below market. Make sure you're crouching, and positioning the top left of your charge bar with the horizontal wood on the box, but make sure you're not flush next to it. put a tiny gap in between."
+    },
+    {
+        id: 13,
+        title: 'Market from B main',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Attacking,
+        usecase: {
+            essential: true,
+            faking: false,
+            retake: false
+        },
+        map: 'https://i.imgur.com/oq080aB.jpg',
+        result: 'https://i.imgur.com/PjcVzaN.png',
+        video: '432604384',
+        images: [
+            {
+                link: 'https://i.imgur.com/qFKV4VZ.jpg'
+            }
+        ],
+        bounces: 2,
+        charges: 1,
+        info: "This lineup will clear the awper that's rotating from mid, they won't expect it since it's coming from behind them. Aim right in between the 2 yellow lines at the top of the window."
+    },
+    {
+        id: 14,
+        title: 'A site from A main',
+        difficulty: LineupDifficulty.Medium,
+        side: LineupSide.Attacking,
+        usecase: {
+            essential: true,
+            faking: false,
+            retake: false
+        },
+        map: 'https://i.imgur.com/ebxttbg.jpg',
+        result: 'https://i.imgur.com/zXvYGnN.png',
+        video: '432604257',
+        images: [
+            {
+                link: 'https://i.imgur.com/fIPZZSS.jpg'
+            }
+        ],
+        bounces: 0,
+        charges: 1,
+        info: "Darts on A site should land here, it scans all the angles around the black box, as well as back of site. Align the bottom left of the charge meter with the stone as shown in the picture."
     }
 ];
 

@@ -11,6 +11,7 @@ import bind_data from '../../data/reconLineups/bind';
 import { MapContext } from '../../MapContext';
 import ReconLineupDetails from '../ReconLineupDetails/ReconLineupDetails';
 import LineupMapHeader from '../LineupMapHeader/LineupMapHeader';
+import LineupMap from '../LineupMap/LineupMap';
 
 function ReconLineupsContainer(props: { map: ValorantMap }) {
 
@@ -18,7 +19,15 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
 
     const mapContext = useContext(MapContext);
 
-    const setLineups = () => {
+    function showLineupMap() {
+        let newState = JSON.parse(JSON.stringify(mapContext.mapState));
+
+        newState.activeLineup = null;
+
+        mapContext.setMapState(newState);
+    }
+
+    function setLineups() {
         let newState = mapContext.mapState;
 
         newState.map = props.map;
@@ -35,8 +44,8 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
                 break;
         }
 
-        if (Object.keys(newState.activeLineup).length === 0 || !newState.lineups.includes(newState.activeLineup as Lineup)) {
-            newState.activeLineup = newState.lineups.length > 0 ? newState.lineups[0] : {};
+        if (newState.activeLineup !== null && !newState.lineups.includes(newState.activeLineup)) {
+            newState.activeLineup = newState.lineups.length > 0 ? newState.lineups[0] : null;
         }
 
         mapContext.setMapState(newState);
@@ -110,6 +119,14 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
                     </div>
 
                     <div className={classes.lineup_selector_main} id="lineupsList">
+                        <div onClick={() => { showLineupMap() }} className={`${classes.lineup_map_button} ${mapContext.mapState.activeLineup === null ? classes.lineup_map_active : ''}`}>
+                            <div className={classes.lineup_map_background}></div>
+                            <div className={classes.lineup_map_main}>
+                                <h1 className={classes.lineup_map_title}>0 {'//'} {props.map} Lineup Map</h1>
+                                <h2 className={classes.lineup_map_description}>Get a visual overview of all lineup locations for this map so you can quickly find one for any spot!</h2>
+                            </div>
+                        </div>
+                        <div className={classes.lineup_list_seperator} />
                         {
                             mapContext.mapState.lineups.length > 0 ? (
                                 mapContext.mapState.lineups.map((lineup: Lineup, i) => (
@@ -126,7 +143,13 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
 
                 <div className={classes.lineup_detail}>
                     <LineupMapHeader map={mapContext.mapState.map}></LineupMapHeader>
-                    <ReconLineupDetails lineup={mapContext.mapState.activeLineup}></ReconLineupDetails>
+                    {
+                        mapContext.mapState.activeLineup !== null ? (
+                            <ReconLineupDetails lineup={mapContext.mapState.activeLineup}></ReconLineupDetails>
+                        ) : (
+                            <LineupMap></LineupMap>
+                        )
+                    }
                 </div>
             </div>
         </div>

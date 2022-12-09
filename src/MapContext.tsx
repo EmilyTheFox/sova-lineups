@@ -4,7 +4,7 @@ import { MapState } from './interfaces/MapState';
 
 const mapState: MapState = {
     lineups: [],
-    activeLineup: {},
+    activeLineup: null,
     map: ValorantMap.Ascent,
     filters: {
         difficulty: [],

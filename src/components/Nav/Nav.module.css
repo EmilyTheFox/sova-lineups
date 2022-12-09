@@ -120,6 +120,7 @@ li {
     border: none;
     cursor: pointer;
     font-family: "GoodTimes";
+    margin-left: 3rem;
 }
 
 .dropbtn::after {
@@ -160,7 +161,6 @@ li {
 .dropdown {
     position: relative;
     display: inline-block;
-    margin: 20px;
 }
 
 .dropdowncontent {

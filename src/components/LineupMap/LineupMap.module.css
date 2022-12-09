@@ -1,0 +1,8 @@
+.container {
+    height: calc(100% - 132px);
+}
+
+.map_layout_image {
+    height: 100%;
+    width: 100%;
+}

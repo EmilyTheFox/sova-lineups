@@ -3,14 +3,14 @@ import classes from './Maps.module.css';
 import Map from '../Map/Map';
 import { Link } from 'react-router-dom';
 
-import map_ascent from '../../assets/map_ascent.png';
-import map_bind from '../../assets/map_bind.png';
-import map_breeze from '../../assets/map_breeze.png';
-import map_fracture from '../../assets/map_fracture.png';
-import map_haven from '../../assets/map_haven.png';
-import map_icebox from '../../assets/map_icebox.png';
-import map_pearl from '../../assets/map_pearl.png';
-import map_split from '../../assets/map_split.png';
+import map_ascent from '../../assets/map_icons/map_ascent.png';
+import map_bind from '../../assets/map_icons/map_bind.png';
+import map_breeze from '../../assets/map_icons/map_breeze.png';
+import map_fracture from '../../assets/map_icons/map_fracture.png';
+import map_haven from '../../assets/map_icons/map_haven.png';
+import map_icebox from '../../assets/map_icons/map_icebox.png';
+import map_pearl from '../../assets/map_icons/map_pearl.png';
+import map_split from '../../assets/map_icons/map_split.png';
 
 function Maps(props: { withDescription?: boolean }) {
     return (

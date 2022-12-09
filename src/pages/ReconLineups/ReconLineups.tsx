@@ -10,7 +10,7 @@ function ReconLineups(props: { map: ValorantMap }) {
 
     const [mapState, setMapState] = useState<MapState>({
         lineups: [],
-        activeLineup: {},
+        activeLineup: null,
         map: props.map,
         filters: {
             difficulty: [],
