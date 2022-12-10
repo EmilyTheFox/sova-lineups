@@ -1,0 +1,15 @@
+.lineup_marker {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url('../../assets/reconMarker.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.lineup_marker:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+
+}
