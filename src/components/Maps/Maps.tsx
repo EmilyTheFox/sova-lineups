@@ -16,7 +16,7 @@ function Maps() {
     return (
         <div className={classes.container}>
             <div className={classes.main}>
-                <div className={classes.right} />
+                <div className={classes.left} />
 
                 <div className={classes.map_selection}>
                     <div className={classes.whiteline_left} />
@@ -24,7 +24,7 @@ function Maps() {
                     <div className={classes.map_container}>
                         <div className={classes.map_title} >
                             <h1 className={`${classes.title_with_description} ${classes.title}`}>Maps</h1>
-                            <p className={classes.maps_description}>Select a map below to start learning any of it's dozens of lineups. Lineups are grouped by what they scan. It's recommended that you start by learning all lineups tagged as Essential</p>
+                            <p className={classes.maps_description}>Select a map below to start learning any of it's dozens of lineups. Lineups are grouped by what are they scan. It's recommended that you start by learning all lineups tagged as Essential</p>
                         </div>
                         <div className={classes.map_wrapper}>
                             <Link className={classes.link} to={'/ascent'}>

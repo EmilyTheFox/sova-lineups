@@ -56,6 +56,11 @@ function Nav() {
                         <div className={classes.links_text}><p>Faq</p></div>
                     </Link>
                 </li>
+                <li>
+                    <a className={classes.links} href={'/discord'} target="_blank">
+                        <div className={classes.links_text}><p>Discord</p></div>
+                    </a>
+                </li>
             </ul>
         </div>
     );

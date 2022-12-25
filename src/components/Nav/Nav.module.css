@@ -5,6 +5,9 @@
 }
 
 .nav_buttons {
+    margin: 0;
+    padding-left: 0;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -154,10 +157,6 @@ li {
     transform: translateX(-50%) scaleX(1);
 }
 
-.nav_buttons {
-    margin: 0;
-}
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -209,20 +208,26 @@ li {
     color: tomato;
 }
 
-@media only screen and (max-width: 400px) {
-    .nav_buttons {
-        padding-left: 0;
-    }
-}
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 479px) {
     .container {
-        height: 45px;
+        height: 60px;
     }
 }
 
-@media only screen and (max-width: 350px) {
+
+@media only screen and (max-width: 479px) {
     .links {
-        margin: 1rem;
+        margin: 1.5rem;
+    }
+
+    .home_btn {
+        padding-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .links {
+        margin: 0.75rem;
     }
 }

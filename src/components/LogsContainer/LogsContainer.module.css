@@ -132,7 +132,7 @@
     height: -moz-fit-content;
     height: fit-content;
     width: 100%;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: -webkit-box;
@@ -144,7 +144,7 @@
     flex-direction: column-reverse;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1399px) {
 
     .left {
         width: 10%;
@@ -159,34 +159,32 @@
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 899px) {
 
     .content {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        padding-left: 0rem;
     }
 
-
     .header {
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
     .content_info {
-        margin-top: 3rem;
+        margin-top: 1rem;
+        width: unset;
+        line-height: 2.2rem;
         font-size: 1.4rem;
     }
 
     .content_logs {
+        width: 100%;
+        font-size: 1rem;
         padding-top: 2rem;
         height: -webkit-fit-content;
         height: -moz-fit-content;
         height: fit-content;
     }
-}
 
-@media only screen and (max-width: 600px) {
     .container {
         height: 100%;
     }
@@ -203,10 +201,6 @@
         width: 90%;
     }
 
-    .content {
-        padding-left: 0rem;
-    }
-
     .whiteLine {
         display: none;
     }
@@ -216,26 +210,18 @@
         font-size: 2rem;
         margin-top: 1rem;
     }
-
-    .content_info {
-        margin-top: 1rem;
-        width: 100%;
-        line-height: 2.2rem;
-        font-size: 1.4rem;
-    }
-
-    .content_logs {
-        width: 100%;
-        font-size: 1rem;
-    }
 }
 
-@media only screen and (max-width: 500px) {
-    .container {
-        min-height: calc(100vh - 4.5rem);
+@media only screen and (max-width: 479px) {
+    .left {
+        width: 2%;
+    }
+
+    .right {
+        width: 2%;
     }
 
     .middle {
-        min-height: calc(100vh - 4.5rem);
+        width: 96%;
     }
 }
