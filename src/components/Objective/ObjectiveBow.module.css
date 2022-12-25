@@ -52,7 +52,7 @@
     font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
     padding-top: 2rem;
-    color: rgb(126, 125, 121);
+    color: rgb(75, 75, 72);
     line-height: 3rem;
     letter-spacing: 1px;
     margin-bottom: 4rem;
@@ -90,7 +90,7 @@
 
 .bow {
     position: relative;
-    padding-right: 7rem;
+    margin-right: 7rem;
     float: right;
 }
 

@@ -3,16 +3,16 @@ import classes from './Maps.module.css';
 import Map from '../Map/Map';
 import { Link } from 'react-router-dom';
 
-import map_ascent from '../../assets/map_icons/map_ascent.png';
-import map_bind from '../../assets/map_icons/map_bind.png';
-import map_breeze from '../../assets/map_icons/map_breeze.png';
-import map_fracture from '../../assets/map_icons/map_fracture.png';
-import map_haven from '../../assets/map_icons/map_haven.png';
-import map_icebox from '../../assets/map_icons/map_icebox.png';
-import map_pearl from '../../assets/map_icons/map_pearl.png';
-import map_split from '../../assets/map_icons/map_split.png';
+import map_ascent from '../../assets/map_icons/map_ascent.webp';
+import map_bind from '../../assets/map_icons/map_bind.webp';
+import map_breeze from '../../assets/map_icons/map_breeze.webp';
+import map_fracture from '../../assets/map_icons/map_fracture.webp';
+import map_haven from '../../assets/map_icons/map_haven.webp';
+import map_icebox from '../../assets/map_icons/map_icebox.webp';
+import map_pearl from '../../assets/map_icons/map_pearl.webp';
+import map_split from '../../assets/map_icons/map_split.webp';
 
-function Maps(props: { withDescription?: boolean }) {
+function Maps() {
     return (
         <div className={classes.container}>
             <div className={classes.main}>
@@ -22,16 +22,10 @@ function Maps(props: { withDescription?: boolean }) {
                     <div className={classes.whiteline_left} />
                     <div className={classes.whiteline_right} />
                     <div className={classes.map_container}>
-                        {
-                            props.withDescription
-                                ? <div className={classes.map_title} >
-                                    <h1 className={`${classes.title_with_description} ${classes.title}`}>Maps</h1>
-                                    <p className={classes.maps_description}>Select a map below to start learning any of it's dozens of lineups. Lineups are ordered from most essential to most specific so it's recommended learn them from top to bottom.</p>
-                                </div>
-                                : <div className={classes.map_title} >
-                                    <h1 className={classes.title}>Maps</h1>
-                                </div>
-                        }
+                        <div className={classes.map_title} >
+                            <h1 className={`${classes.title_with_description} ${classes.title}`}>Maps</h1>
+                            <p className={classes.maps_description}>Select a map below to start learning any of it's dozens of lineups. Lineups are grouped by what they scan. It's recommended that you start by learning all lineups tagged as Essential</p>
+                        </div>
                         <div className={classes.map_wrapper}>
                             <Link className={classes.link} to={'/ascent'}>
                                 <Map title={'Ascent'} location={'Venice, Italy'} map={map_ascent} />

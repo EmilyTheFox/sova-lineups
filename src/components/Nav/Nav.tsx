@@ -10,7 +10,7 @@ function Nav() {
             <ul className={classes.nav_buttons}>
                 <li className={classes.home_btn}>
                     <Link to={'/'}>
-                        <img src={home_icon} alt={'valorant logo'} />
+                        <img src={home_icon} alt={'valorant logo'} width="50px" height="50px" />
                     </Link>
                 </li>
                 <li>

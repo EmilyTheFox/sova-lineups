@@ -61,7 +61,7 @@
     border-bottom: 1px solid white;
 }
 
-h1::before {
+.map_title::before {
     position: absolute;
     content: attr(data-content);
     text-decoration: underline;
@@ -76,7 +76,7 @@ h1::before {
     text-decoration-color: rgb(255, 70, 85);
 }
 
-.main:hover h1::before {
+.main:hover .map_title::before {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }

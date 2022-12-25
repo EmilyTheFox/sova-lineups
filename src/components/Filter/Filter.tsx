@@ -39,9 +39,9 @@ function Filter() {
 
     return (
         <div className={classes.container}>
-            <h5 className={classes.title}>
+            <h1 className={classes.title}>
                 <span>Filters</span>
-            </h5>
+            </h1>
             <div className={classes.main}>
                 <div className={classes.filterset}>
                     <div className={classes.filterset_title}>

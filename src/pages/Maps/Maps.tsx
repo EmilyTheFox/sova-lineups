@@ -8,7 +8,7 @@ function Faq() {
     return (
         <div className={classes.container}>
             <Nav />
-            <Maps withDescription={true} />
+            <Maps />
             <Footer />
         </div>
     );

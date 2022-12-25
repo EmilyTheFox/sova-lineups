@@ -55,6 +55,7 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
     useEffect(() => {
         fadeInLineupsList(document.getElementById('lineupsList'));
         fadeInFilterList(document.getElementById('filterList'));
+        fadeInFilterList(document.getElementById('viewMap'));
     }, [props.map]);
 
     const fadeInLineupsList = (element: GSAPTweenTarget) => {
@@ -72,7 +73,7 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
 
     const fadeInFilterList = (element: GSAPTweenTarget) => {
         gsap.fromTo(element, {
-            y: -100,
+            y: -130,
             opacity: 0,
         }, {
             duration: 1,
@@ -114,19 +115,15 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
             {sideLineups}
             <div className={classes.main}>
                 <div className={classes.lineup_selector}>
+                    <div id="viewMap" onClick={() => { showLineupMap() }} className={`${classes.lineup_map_button}`}>
+                        <h1 className={classes.lineup_map_view_text}>View Map</h1>
+                    </div>
+
                     <div className={classes.filter} id="filterList">
                         <Filter />
                     </div>
 
                     <div className={classes.lineup_selector_main} id="lineupsList">
-                        <div onClick={() => { showLineupMap() }} className={`${classes.lineup_map_button} ${mapContext.mapState.activeLineup === null ? classes.lineup_map_active : ''}`}>
-                            <div className={classes.lineup_map_background}></div>
-                            <div className={classes.lineup_map_main}>
-                                <h1 className={classes.lineup_map_title}>0 {'//'} {props.map} Lineup Map</h1>
-                                <h2 className={classes.lineup_map_description}>Get a visual overview of all lineup locations for this map so you can quickly find one for any spot!</h2>
-                            </div>
-                        </div>
-                        <div className={classes.lineup_list_seperator} />
                         {
                             mapContext.mapState.lineups.length > 0 ? (
                                 mapContext.mapState.lineups.map((lineup: Lineup, i) => (

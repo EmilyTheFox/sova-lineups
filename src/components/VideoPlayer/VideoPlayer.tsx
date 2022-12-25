@@ -13,7 +13,7 @@ function VideoPlayer(props: {
 
     return (
         <div className={props.className} style={props.style}>
-            <video src={props.url} style={{ width: "100%", height: "100%" }} preload="auto" muted={props.muted} loop={props.loop} autoPlay={props.playing} playsInline={props.playsInline} webkit-playsinline={props.playsInline} x5-playsinline={props.playsInline} controls={props.controls} ></video>
+            <video src={props.url} style={{ width: "100%", height: "100%" }} preload="auto" muted={props.muted} loop={props.loop} autoPlay={props.playing} playsInline={props.playsInline} controls={props.controls} ></video>
         </div>
     );
 }

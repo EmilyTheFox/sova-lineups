@@ -2,14 +2,14 @@ import React from 'react';
 import classes from './LineupMapHeader.module.css';
 import { ValorantMap } from '../../interfaces/ValorantMap';
 
-import map_ascent from '../../assets/map_headers/map_ascent.png';
-import map_bind from '../../assets/map_headers/map_bind.png';
-import map_breeze from '../../assets/map_headers/map_breeze.png';
-import map_fracture from '../../assets/map_headers/map_fracture.png';
-import map_haven from '../../assets/map_headers/map_haven.png';
-import map_icebox from '../../assets/map_headers/map_icebox.png';
-import map_pearl from '../../assets/map_headers/map_pearl.png';
-import map_split from '../../assets/map_headers/map_split.png';
+import map_ascent from '../../assets/map_headers/map_ascent.webp';
+import map_bind from '../../assets/map_headers/map_bind.webp';
+import map_breeze from '../../assets/map_headers/map_breeze.webp';
+import map_fracture from '../../assets/map_headers/map_fracture.webp';
+import map_haven from '../../assets/map_headers/map_haven.webp';
+import map_icebox from '../../assets/map_headers/map_icebox.webp';
+import map_pearl from '../../assets/map_headers/map_pearl.webp';
+import map_split from '../../assets/map_headers/map_split.webp';
 
 function LineupMapHeader(props: { map: ValorantMap }) {
 

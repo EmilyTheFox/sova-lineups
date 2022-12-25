@@ -12,7 +12,7 @@ function Home() {
             <Nav />
             <Intro />
             <ObjectiveRecon />
-            <Maps withDescription={false} />
+            <Maps />
             <Footer />
         </div>
     );

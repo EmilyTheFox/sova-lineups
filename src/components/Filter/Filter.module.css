@@ -54,7 +54,7 @@
     font-weight: 300;
     letter-spacing: 2px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 40%;
 

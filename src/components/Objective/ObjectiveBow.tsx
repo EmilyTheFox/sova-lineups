@@ -49,7 +49,7 @@ function ObjectiveBow() {
                         &#47;&#47;&#47; You'll have your intel, I promise<span style={{ color: 'rgb(255, 70, 85)' }}> _</span>
                     </div>
                     <div className={classes.block} />
-                    <img src={bow} alt="Sova's Bow" className={classes.bow} />
+                    <img src={bow} alt="Sova's Bow" className={classes.bow} width="160px" height="472px" />
                 </div>
                 <div className={classes.right}>
                     <p ref={sectionRefBowText} className={classes.text}>
