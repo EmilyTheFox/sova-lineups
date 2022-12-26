@@ -122,7 +122,7 @@ function ObjectiveRecon() {
                 </div>
                 <div className={classes.right} />
             </div>
-        </div>
+        </div >
     );
 }
 

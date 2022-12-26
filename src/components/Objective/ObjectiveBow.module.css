@@ -168,21 +168,21 @@
     clip-path: polygon(5% 0, 100% 0, 100% 100%, 5% 100%, 0 50%);
 }
 
-@media only screen and (max-width: 1700px) {
+@media only screen and (max-width: 1599px) {
     .bow_text {
         right: 0rem;
     }
 }
 
 @media only screen and (max-width: 1200px) {
-    .text {
-        font-size: 1.4rem;
-    }
-
     .container {
         height: -webkit-fit-content;
         height: -moz-fit-content;
         height: fit-content;
+    }
+
+    .right {
+        width: 60%;
     }
 }
 
@@ -192,7 +192,7 @@
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 899px) {
     .container {
         top: 5rem;
         -webkit-box-sizing: border-box;
@@ -220,9 +220,10 @@
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 479px) {
     .text {
         margin-right: .5rem;
+        margin-left: 0;
     }
 
     .text::before {
@@ -244,9 +245,7 @@
         position: absolute;
         background: rgb(255, 70, 85);
     }
-}
 
-@media only screen and (max-width: 450px) {
     .right {
         margin-left: 3rem;
     }
