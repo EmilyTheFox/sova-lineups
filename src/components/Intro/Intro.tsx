@@ -54,6 +54,7 @@ function Home() {
                 </div>
                 <div className={classes.main_wrapper}>
                     <div className={classes.left}>
+                        <div className={classes.sova_text}>SOVA</div>
                         <h1 className={classes.main_title} id="titleAnimation">
                             SOVA
                         </h1>
@@ -87,7 +88,6 @@ function Home() {
                             <div className={classes.block2} />
                             <img className={classes.sova_image} alt={'sova'} src={sova_character_image} />
                         </div>
-                        <div className={classes.sova_text}>SOVA</div>
                     </div>
                 </div>
             </div>

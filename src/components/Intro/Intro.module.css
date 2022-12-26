@@ -275,12 +275,15 @@
 
 .sova_text {
     position: absolute;
-    font-size: 20rem;
-    right: -20%;
-    top: 30rem;
+    font-size: 17rem;
+    right: 12rem;
+    top: -2rem;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+    transform-origin: left;
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
     font-family: 'DrukWide';
     z-index: -1;
     color: rgba(0, 0, 0, 0);
@@ -298,6 +301,42 @@
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
     height: fit-content !important;
+}
+
+@media only screen and (min-width: 2100px) {
+    .sova_text {
+        right: 22rem;
+    }
+}
+
+@media only screen and (min-width: 2500px) {
+    .sova_text {
+        right: 40rem;
+    }
+}
+
+@media only screen and (max-width: 1900px) {
+    .sova_text {
+        right: 6rem;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .sova_text {
+        right: -5rem;
+    }
+}
+
+@media only screen and (max-width: 1368px) {
+    .sova_text {
+        right: -30rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .sova_text {
+        right: -40rem;
+    }
 }
 
 @media only screen and (min-height: 1000px) {
@@ -377,18 +416,7 @@
     .right_line {
         width: 5%;
     }
-
-    .container {
-        border-bottom: 1px solid white;
-    }
 }
-
-/* @media only screen and (max-width: 599px) {
-    .title {
-        right: -0.25rem;
-        font-size: 2.5rem;
-    }
-} */
 
 @media only screen and (max-width: 479px) {
     .main_wrapper {
