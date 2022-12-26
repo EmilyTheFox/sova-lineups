@@ -131,23 +131,23 @@
 
 @media only screen and (min-width: 1600px) and (max-width: 1919px) {
     .container {
-        height: 42.7rem;
-        width: 22.7rem
+        height: 42.2rem;
+        width: 22.2rem
     }
 
 }
 
 @media only screen and (max-width: 1320px) and (min-width: 1280px) {
     .container {
-        height: 45.1rem;
-        width: 24rem
+        height: 44.4rem;
+        width: 23.5rem
     }
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 900px) {
     .container {
-        height: 42.3rem;
-        width: 22.5rem
+        height: 41.6rem;
+        width: 22rem
     }
 }
 
@@ -162,8 +162,8 @@
     }
 
     .container {
-        height: 22rem;
-        width: 22rem;
+        height: 21.5rem;
+        width: 21.5rem;
     }
 
     .map_title {
@@ -177,35 +177,35 @@
 
 @media only screen and (max-width: 780px) and (min-width: 700px) {
     .container {
-        height: 19.5rem;
-        width: 19.5rem;
+        height: 19rem;
+        width: 19rem;
     }
 }
 
 @media only screen and (max-width: 699px) and (min-width: 600px) {
     .container {
-        height: 25rem;
-        width: 25rem;
+        height: 24.5rem;
+        width: 24.5rem;
     }
 }
 
 @media only screen and (max-width: 599px) and (min-width: 480px) {
     .container {
-        height: 20rem;
-        width: 20rem;
+        height: 19.5rem;
+        width: 19.5rem;
     }
 }
 
 @media only screen and (max-width: 479px) and (min-width: 375px) {
     .container {
-        height: 16.7rem;
-        width: 16.7rem;
+        height: 16.2rem;
+        width: 16.2rem;
     }
 }
 
 @media only screen and (max-width: 374px) {
     .container {
-        height: 13.9rem;
-        width: 13.9rem;
+        height: 13.5rem;
+        width: 13.5rem;
     }
 }

@@ -5,23 +5,12 @@
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    height: calc(100vh - 200px);
+    height: auto;
     background-image: url("../../assets/intro_background.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     z-index: 100;
-}
-
-.block3 {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 10rem;
-    width: 60rem;
-    bottom: -10rem;
-    right: 0;
-    background-color: rgb(15, 25, 35);
 }
 
 .main {
@@ -56,12 +45,13 @@
     position: relative;
     height: 100%;
     width: 20%;
+    align-self: flex-start;
 }
 
 .title {
     margin: 0;
     position: absolute;
-    top: -2rem;
+    top: 12rem;
     right: 0;
     letter-spacing: 3px;
     font-size: 3rem;
@@ -70,7 +60,6 @@
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    width: calc(100vh - 200px);
     -webkit-transform-origin: bottom right;
     -ms-transform-origin: bottom right;
     transform-origin: bottom right;
@@ -82,6 +71,10 @@
     font-family: 'Tungsten-Bold', sans-serif;
     color: rgb(238, 228, 228);
     /* -webkit-text-stroke: 1px rgb(83, 83, 83) */
+}
+
+.header_title_span {
+    width: max-content;
 }
 
 .main_wrapper {
@@ -96,9 +89,9 @@
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     height: 100%;
     width: 80%;
     float: right;
@@ -140,9 +133,8 @@
 
 .main_title {
     position: relative;
-    margin-top: 20%;
     color: rgb(235, 235, 235);
-    font-size: 7rem;
+    font-size: 10rem;
     font-family: "DrukWide";
     border-bottom: 1px solid rgb(238, 238, 238);
     padding-left: 1rem;
@@ -251,9 +243,9 @@
 
 .sova_image {
     position: absolute;
-    bottom: -10rem;
+    bottom: 0;
     width: 100%;
-
+    transform: translateY(10%);
     z-index: 1;
 }
 
@@ -298,6 +290,7 @@
 .video_player {
     height: 100%;
     background: rgb(15, 25, 35);
+    padding-bottom: 2rem;
 }
 
 .video {
@@ -307,31 +300,32 @@
     height: fit-content !important;
 }
 
-@media only screen and (min-height: 1700px) {
+@media only screen and (min-height: 1000px) {
     .main_title {
-        font-size: 10rem;
+        margin-top: 20%;
+    }
+
+    .title {
+        top: 30rem;
     }
 }
 
-@media only screen and (max-height: 1200px) and (min-width: 600px) {
-    .container {
-        min-height: 1100px !important;
+@media only screen and (max-width: 1599px) {
+    .main_title {
+        font-size: 7rem;
     }
-}
 
-@media only screen and (max-width: 1650px) {
     .sova_image {
         width: 90rem;
     }
 
     .header {
-        position: relative;
-        height: 100%;
-        max-width: 5%;
+        width: 10%;
+        min-width: 10%;
     }
 
     .right_line {
-        width: 5%;
+        width: 10%;
     }
 
     .main_wrapper {
@@ -339,7 +333,7 @@
     }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1368px) {
     .left {
         width: 55%;
     }
@@ -358,7 +352,7 @@
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 899px) {
     .sova_text {
         display: none;
     }
@@ -366,9 +360,7 @@
     .main_title {
         font-size: 5rem;
     }
-}
 
-@media only screen and (max-width: 800px) {
     .right {
         display: none;
     }
@@ -377,12 +369,28 @@
         width: 90%;
     }
 
+    .header {
+        width: 5%;
+        min-width: 5%;
+    }
+
+    .right_line {
+        width: 5%;
+    }
+
     .container {
         border-bottom: 1px solid white;
     }
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 599px) {
+    .title {
+        right: -0.25rem;
+        font-size: 2.5rem;
+    }
+} */
+
+@media only screen and (max-width: 479px) {
     .main_wrapper {
         height: -webkit-fit-content;
         height: -moz-fit-content;
@@ -395,7 +403,16 @@
     }
 
     .header {
+        width: 2%;
+        min-width: 2%;
+    }
+
+    .header * {
         display: none;
+    }
+
+    .right_line {
+        width: 2%;
     }
 
     .main_title {

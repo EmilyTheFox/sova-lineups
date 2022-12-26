@@ -49,8 +49,7 @@ function Home() {
                 <div className={classes.background_text}>vALORANT</div>
                 <div className={classes.header}>
                     <h1 className={classes.title} id="headerAnimation">
-                        <span>AGENT 04/20 &nbsp;&nbsp; //</span>
-                        <span>INITIATOR</span>{' '}
+                        <span className={classes.header_title_span}>AGENT 04/20 &nbsp;&nbsp; // &nbsp;&nbsp; INITIATOR</span>
                     </h1>
                 </div>
                 <div className={classes.main_wrapper}>
@@ -86,7 +85,6 @@ function Home() {
                         <div className={classes.sova_image_container}>
                             <div className={classes.block} />
                             <div className={classes.block2} />
-                            Yoo
                             <img className={classes.sova_image} alt={'sova'} src={sova_character_image} />
                         </div>
                         <div className={classes.sova_text}>SOVA</div>
