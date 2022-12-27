@@ -5,13 +5,23 @@ import Filter from '../Filter/Filter';
 import ReconLineupItem from '../ReconLineupItem/ReconLineupItem';
 import classes from './ReconLineupsContainer.module.css';
 import gsap, { Expo } from 'gsap';
-
-import ascent_data from '../../data/reconLineups/ascent';
-import bind_data from '../../data/reconLineups/bind';
 import { MapContext } from '../../MapContext';
 import ReconLineupDetails from '../ReconLineupDetails/ReconLineupDetails';
 import LineupMapHeader from '../LineupMapHeader/LineupMapHeader';
 import LineupMap from '../LineupMap/LineupMap';
+
+import view_ascent from '../../assets/view_map_buttons/map_ascent.webp';
+import view_bind from '../../assets/view_map_buttons/map_bind.webp';
+import view_breeze from '../../assets/view_map_buttons/map_breeze.webp';
+import view_fracture from '../../assets/view_map_buttons/map_fracture.webp';
+import view_haven from '../../assets/view_map_buttons/map_haven.webp';
+import view_icebox from '../../assets/view_map_buttons/map_icebox.webp';
+import view_pearl from '../../assets/view_map_buttons/map_pearl.webp';
+import view_split from '../../assets/view_map_buttons/map_split.webp';
+
+import ascent_data from '../../data/reconLineups/ascent';
+import bind_data from '../../data/reconLineups/bind';
+
 
 function ReconLineupsContainer(props: { map: ValorantMap }) {
 
@@ -96,6 +106,40 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
         mapContext.setMapState(newState);
     }
 
+
+    let map;
+
+    switch (props.map) {
+        case ValorantMap.Ascent:
+            map = view_ascent;
+            break;
+        case ValorantMap.Bind:
+            map = view_bind;
+            break;
+        case ValorantMap.Breeze:
+            map = view_breeze;
+            break;
+        case ValorantMap.Fracture:
+            map = view_fracture;
+            break;
+        case ValorantMap.Haven:
+            map = view_haven;
+            break;
+        case ValorantMap.Icebox:
+            map = view_icebox;
+            break;
+        case ValorantMap.Pearl:
+            map = view_pearl;
+            break;
+        case ValorantMap.Split:
+            map = view_split;
+            break;
+    }
+
+    let view_map_button_background = {
+        backgroundImage: `url(${map})`
+    };
+
     return (
         <div className={classes.container}>
             {
@@ -107,7 +151,7 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
             }
             <div className={classes.main}>
                 <div className={`${classes.lineup_selector} ${mapContext.mapState.sideSelectorOpen ? classes.mobile_expanded : ''}`}>
-                    <div id="viewMap" onClick={() => { showLineupMap() }} className={`${classes.lineup_map_button}`}>
+                    <div id="viewMap" onClick={() => { showLineupMap() }} className={`${classes.lineup_map_button}`} style={view_map_button_background}>
                         <h1 className={classes.lineup_map_view_text}>View Map</h1>
                     </div>
 

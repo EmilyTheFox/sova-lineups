@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    max-width: 300px;
+    max-width: 330px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -56,7 +56,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 40%;
+    width: 35%;
+    margin-left: 0.5rem;
 
 }
 
@@ -68,7 +69,7 @@
 .filterset_filters {
     display: flex;
     flex-direction: row;
-    width: 60%;
+    width: 65%;
 }
 
 .title {
@@ -122,4 +123,14 @@
 
 .filter:hover {
     cursor: pointer;
+}
+
+@media only screen and (min-width: 1700px) {
+    .filterset_title {
+        width: 40%;
+    }
+
+    .filterset_filters {
+        width: 60%;
+    }
 }

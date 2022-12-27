@@ -40,9 +40,6 @@ const ascent_data: Lineup[] = [
         images: [
             {
                 link: 'https://i.imgur.com/fqeNnRT.png'
-            },
-            {
-                link: 'https://i.imgur.com/fqeNnRT.png'
             }
         ],
         bounces: 1,

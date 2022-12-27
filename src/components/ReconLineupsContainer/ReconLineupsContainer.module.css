@@ -128,7 +128,6 @@
     min-height: 13rem;
     background: #0f1923;
     margin: 0;
-    background-image: url('../../assets/view_map_button.png');
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,7 +159,7 @@
 
 @media only screen and (max-width: 1599px) {
     .lineup_selector {
-        min-width: 250px;
+        min-width: 300px;
     }
 }
 
