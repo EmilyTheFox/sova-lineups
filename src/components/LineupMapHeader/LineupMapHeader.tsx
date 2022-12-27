@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import classes from './LineupMapHeader.module.css';
 import { ValorantMap } from '../../interfaces/ValorantMap';
 
@@ -10,6 +10,7 @@ import map_haven from '../../assets/map_headers/map_haven.webp';
 import map_icebox from '../../assets/map_headers/map_icebox.webp';
 import map_pearl from '../../assets/map_headers/map_pearl.webp';
 import map_split from '../../assets/map_headers/map_split.webp';
+import { MapContext } from '../../MapContext';
 
 function LineupMapHeader(props: { map: ValorantMap }) {
 
@@ -55,10 +56,20 @@ function LineupMapHeader(props: { map: ValorantMap }) {
         backgroundImage: `url(${map})`
     };
 
+    const mapContext = useContext(MapContext);
+
+    const dropdownClickHandler = () => {
+        let newState = JSON.parse(JSON.stringify(mapContext.mapState));
+
+        newState.sideSelectorOpen = !newState.sideSelectorOpen;
+
+        mapContext.setMapState(newState);
+    }
+
     return (
         <div style={background} className={classes.container}>
             <div className={classes.main}>
-                <div className={classes.button} onClick={() => { }}>
+                <div className={classes.button} onClick={() => dropdownClickHandler()}>
                     <div className={classes.icon} />
                     <div className={classes.icon} />
                     <div className={classes.icon} />

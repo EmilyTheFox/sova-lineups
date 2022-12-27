@@ -15,14 +15,14 @@ import LineupMap from '../LineupMap/LineupMap';
 
 function ReconLineupsContainer(props: { map: ValorantMap }) {
 
-    let [sideLineupsOpen, setSideLineupsOpen] = React.useState(false);
-
     const mapContext = useContext(MapContext);
 
     function showLineupMap() {
         let newState = JSON.parse(JSON.stringify(mapContext.mapState));
 
         newState.activeLineup = null;
+
+        newState.sideSelectorOpen = false;
 
         mapContext.setMapState(newState);
     }
@@ -44,8 +44,12 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
                 break;
         }
 
-        if (newState.activeLineup !== null && !newState.lineups.includes(newState.activeLineup)) {
-            newState.activeLineup = newState.lineups.length > 0 ? newState.lineups[0] : null;
+        if (newState.activeLineup !== null) {
+            if (!newState.lineups.some((lineup, i) => {
+                return lineup.title === newState.activeLineup?.title && lineup.result === newState.activeLineup?.result;
+            })) {
+                newState.activeLineup = newState.lineups.length > 0 ? newState.lineups[0] : null;
+            }
         }
 
         mapContext.setMapState(newState);
@@ -84,37 +88,25 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
         });
     }
 
-    let backdrop;
-    let sideLineups;
+    const backdropClickHandler = () => {
+        let newState = JSON.parse(JSON.stringify(mapContext.mapState));
 
-    if (sideLineupsOpen) {
-        // backdrop = <Backdrop onClick={() => sideLineupsOpen.backdropClickHandler()} />
-        // sideLineups = (
-        //     <div className={classes.lineup_selector} style={{ display: "block", zIndex: '5000' }}>
-        //         <div ref={(div) => (this.filterList = div)} className={classes.filter}>
-        //             <Filter />
-        //         </div>
+        newState.sideSelectorOpen = false;
 
-        //         <div ref={(div) => (this.lineupList = div)} className={classes.lineup_selector_main}>
-        //                     return value.lineups.map((lineup) => {
-        //                         return (
-        //                             <LineupItem
-        //                                 className={classes.lineupItem}
-        //                                 key={lineup.id}
-        //                                 lineup={lineup}
-        //                             />
-        //                         );
-        //                     });
-        //         </div>
-        //     </div>
-        // )
+        mapContext.setMapState(newState);
     }
+
     return (
         <div className={classes.container}>
-            {backdrop}
-            {sideLineups}
+            {
+                mapContext.mapState.sideSelectorOpen ? (
+                    <div className={classes.backdrop} onClick={() => backdropClickHandler()} />
+                ) : (
+                    <></>
+                )
+            }
             <div className={classes.main}>
-                <div className={classes.lineup_selector}>
+                <div className={`${classes.lineup_selector} ${mapContext.mapState.sideSelectorOpen ? classes.mobile_expanded : ''}`}>
                     <div id="viewMap" onClick={() => { showLineupMap() }} className={`${classes.lineup_map_button}`}>
                         <h1 className={classes.lineup_map_view_text}>View Map</h1>
                     </div>
@@ -127,7 +119,7 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
                         {
                             mapContext.mapState.lineups.length > 0 ? (
                                 mapContext.mapState.lineups.map((lineup: Lineup, i) => (
-                                    <ReconLineupItem lineup={lineup} isActive={lineup === mapContext.mapState.activeLineup} prefix={`${i + 1}`} key={i} />
+                                    <ReconLineupItem lineup={lineup} isActive={lineup.id === mapContext.mapState.activeLineup?.id} prefix={`${i + 1}`} key={i} />
                                 ))
                             ) : (
                                 <div style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

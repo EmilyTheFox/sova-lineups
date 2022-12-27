@@ -61,7 +61,7 @@ function ObjectiveBow() {
                         But scanning important angles isn't everything. What's the point of scanning an area where someone holding can
                         easily lose line of sight of your dart before it lands? Or worse, shoot the dart before it scans with little effort.
                         <br /><br />
-                        The collection of darts you'll find here does its best to meet all these criteria. These darts are used by even the best Sova players
+                        The collection of darts you'll find here does its best to meet all these criteria. These darts are used by even the best Sova players!
                         Select a map below and start learning how to use your recon dart to its fullest potential in matches.
                     </p>
                 </div>

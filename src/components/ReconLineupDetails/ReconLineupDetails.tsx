@@ -45,7 +45,7 @@ function ReconLineupDetails(props: { lineup: Lineup }) {
                                 <div className={classes.bounce_container}>
                                     {
                                         [...Array(2)].map((value, i) => (
-                                            <div className={`${i < lineup!.bounces ? classes.bounce : classes.bounce_empty}`} />
+                                            <div className={`${i < lineup!.bounces ? classes.bounce : classes.bounce_empty}`} key={i} />
                                         ))
                                     }
                                 </div>
@@ -55,7 +55,7 @@ function ReconLineupDetails(props: { lineup: Lineup }) {
                                 <div className={classes.charge_container}>
                                     {
                                         [...Array(3)].map((value, i) => (
-                                            <div className={`${i < lineup!.charges ? classes.charge : classes.charge_empty}`} />
+                                            <div className={`${i < lineup!.charges ? classes.charge : classes.charge_empty}`} key={i} />
                                         ))
                                     }
                                 </div>

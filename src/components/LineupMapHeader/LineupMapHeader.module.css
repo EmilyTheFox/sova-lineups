@@ -79,7 +79,7 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-left: 2rem;
-
+    cursor: pointer;
 }
 
 .icon {
@@ -96,7 +96,7 @@
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 899px) {
     .line {
         margin-left: 8rem;
     }

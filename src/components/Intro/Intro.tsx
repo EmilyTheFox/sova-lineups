@@ -35,7 +35,7 @@ function Home() {
             {
                 x: 0,
                 opacity: 1,
-                duration: 1,
+                duration: 1.5,
                 ease: Expo.easeOut,
                 delay: 1
             });

@@ -4,7 +4,8 @@ import { ValorantMap } from "./ValorantMap";
 
 export interface MapState {
     lineups: Lineup[],
-    activeLineup: Lineup | null
+    activeLineup: Lineup | null,
+    sideSelectorOpen: boolean,
     map: ValorantMap,
     filters: Filters
 }

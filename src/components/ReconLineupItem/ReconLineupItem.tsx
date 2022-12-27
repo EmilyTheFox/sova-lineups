@@ -59,6 +59,8 @@ function ReconLineupItem(props: { lineup: Lineup, isActive: boolean, prefix: str
 
         newState.activeLineup = lineup;
 
+        newState.sideSelectorOpen = false;
+
         mapContext.setMapState(newState);
     }
 
