@@ -31,6 +31,7 @@
     flex-direction: row;
     height: inherit;
     overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .background_text {
@@ -178,6 +179,89 @@
     font-size: 1.6rem;
     padding: 2rem 2rem 0;
     margin: 0;
+}
+
+.map_container {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.map {
+    display: block;
+    width: 100%;
+}
+
+.map_wrapper {
+    border: 2px solid rgb(105, 105, 105);
+    width: 100%;
+    position: relative;
+}
+
+.map_wrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 6rem;
+    width: .5rem;
+    top: calc(50% - 3rem);
+    right: -.5rem;
+    background-color: rgb(255, 70, 85);
+}
+
+.map_wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 6rem;
+    width: .5rem;
+    top: calc(50% - 3rem);
+    left: -.5rem;
+    background-color: rgb(255, 70, 85);
+}
+
+.map_container::before {
+    content: '';
+    position: absolute;
+    width: .5rem;
+    height: 2rem;
+    background: rgb(151, 151, 151);
+    top: 0;
+    right: 2rem;
+}
+
+.map_block {
+    position: absolute;
+    height: 1.5rem;
+    width: 40%;
+    background: rgb(139, 151, 143);
+    bottom: -1.5rem;
+    right: -1px;
+    z-index: 0;
+}
+
+.map_line {
+    position: absolute;
+    height: .4rem;
+    width: .4rem;
+    background: rgb(139, 151, 143);
+    bottom: 0rem;
+    left: -5rem;
+    z-index: 0;
+}
+
+.videoWrapper {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    width: 80%;
+    height: auto;
 }
 
 @media only screen and (max-width: 1399px) {

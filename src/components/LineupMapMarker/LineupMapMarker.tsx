@@ -60,13 +60,14 @@ function LineupMapMarker(props: MarkerComponentProps) {
         mapContext.setMapState(newState);
 
         console.log('Clicked on marker with ID ' + lineup.id)
+        console.log(newState.mapViewingLineup);
     }
 
     return (
         <>
             {
                 !hidden ?
-                    <div className={classes.lineup_marker} key={`${props.lineup.id}`} onClick={() => setActiveMapLineup(props.lineup)} />
+                    <div className={`${classes.lineup_marker} ${mapContext.mapState.mapViewingLineup?.id === props.lineup.id ? classes.active : ''} `} key={`${props.lineup.id}`} onClick={() => setActiveMapLineup(props.lineup)} />
                     : <></>
             }
         </>

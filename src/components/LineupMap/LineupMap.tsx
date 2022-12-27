@@ -4,6 +4,7 @@ import ImageMarker, { Marker } from './ImageMarker'
 import ascent_layout from '../../assets/map_layouts/ascent_layout.svg'
 import LineupMapMarker from '../LineupMapMarker/LineupMapMarker';
 import { MapContext } from '../../MapContext';
+import VideoPlayer from '../VideoPlayer/VideoPlayer';
 
 function LineupMap() {
 
@@ -51,6 +52,28 @@ function LineupMap() {
                 />
             </div>
             <div className={classes.main_right}>
+                {
+                    mapContext.mapState.mapViewingLineup ? <>
+                        <div className={classes.videoWrapper}>
+                            <VideoPlayer
+                                className={classes.vimeo}
+                                url={mapContext.mapState.mapViewingLineup.video}
+                                loop={true}
+                                playing={false}
+                                playsInline={true}
+                                controls={true}
+                            />
+                        </div>
+                        <div className={classes.map_container}>
+                            <div className={classes.map_wrapper}>
+                                <div className={classes.map_block} />
+                                <div className={classes.map_line} />
+                                <img src={mapContext.mapState.mapViewingLineup.map} alt="coverage map" className={classes.map} />
+                            </div>
+                        </div>
+                    </> : <></>
+                }
+
             </div>
         </div>
     );

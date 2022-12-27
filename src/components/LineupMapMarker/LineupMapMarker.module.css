@@ -6,12 +6,17 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: rgb(55, 100, 245, 0.35);
+    background-color: rgba(57, 100, 241, 0.35);
+    cursor: pointer;
 }
 
 .lineup_marker:hover {
     transform: scale(1.1, 1.1);
-    cursor: pointer;
-    outline: 1px solid rgb(55, 100, 245);
-    background-color: rgb(55, 100, 245, 0.4);
+    outline: 1px solid rgb(114, 187, 255);
+    background-color: rgb(57, 100, 241, 0.4);
+}
+
+.active {
+    outline: 1px solid rgb(114, 187, 255);
+    background-color: rgb(57, 100, 241, 0.4);
 }
