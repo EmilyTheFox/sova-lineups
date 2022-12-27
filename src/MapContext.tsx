@@ -7,6 +7,7 @@ const mapState: MapState = {
     activeLineup: null,
     sideSelectorOpen: false,
     map: ValorantMap.Ascent,
+    mapViewingLineup: null,
     filters: {
         difficulty: [],
         side: [],

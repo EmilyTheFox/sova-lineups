@@ -19,7 +19,7 @@ function LineupMap() {
                 newMarkers.push({
                     left: lineup.landsAt.x,
                     top: lineup.landsAt.y,
-                    id: lineup.id
+                    lineup: lineup
                 });
             }
         }
@@ -45,6 +45,7 @@ function LineupMap() {
                     onAddMarker={(marker: Marker) => {
                         marker.top = parseFloat(`${marker.top}`) + 1.3
                         marker.left = parseFloat(`${marker.left}`) + 1.3
+                        marker.lineup = mapContext.mapState.lineups[0]
                         setMarkers([...markers, marker])
                     }}
                 />

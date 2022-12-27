@@ -62,6 +62,14 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
             }
         }
 
+        if (newState.activeLineup === null) {
+            if (newState.mapViewingLineup === null || !newState.lineups.some((lineup, i) => {
+                return lineup.title === newState.mapViewingLineup?.title && lineup.result === newState.mapViewingLineup?.result;
+            })) {
+                newState.mapViewingLineup = newState.lineups.length > 0 ? newState.lineups[0] : null;
+            }
+        }
+
         mapContext.setMapState(newState);
     }
     setLineups();

@@ -116,6 +116,14 @@ const ascent_data: Lineup[] = [
             faking: false,
             retake: false
         },
+        landsAt: {
+            x: 61.4,
+            y: 46.2
+        },
+        shotFrom: {
+            x: 34.37,
+            y: 59.76
+        },
         map: 'https://i.imgur.com/Ytvx1X7.jpg',
         result: 'https://i.imgur.com/TE4eThr.png',
         video: 'https://vimeo.com/432419685',

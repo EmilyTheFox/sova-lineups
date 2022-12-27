@@ -57,7 +57,7 @@ function Nav() {
                     </Link>
                 </li>
                 <li>
-                    <a className={classes.links} href={'/discord'} target="_blank">
+                    <a className={classes.links} href={'/discord'} target="_blank" rel="noreferrer">
                         <div className={classes.links_text}><p>Discord</p></div>
                     </a>
                 </li>

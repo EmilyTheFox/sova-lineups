@@ -7,5 +7,6 @@ export interface MapState {
     activeLineup: Lineup | null,
     sideSelectorOpen: boolean,
     map: ValorantMap,
+    mapViewingLineup: Lineup | null,
     filters: Filters
 }

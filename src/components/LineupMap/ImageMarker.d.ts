@@ -1,14 +1,16 @@
 import * as React from 'react';
+import { Lineup } from '../../interfaces/Lineup';
 
 export declare type Marker = {
     top: Number;
     left: Number;
+    lineup: Lineup;
 };
 export declare type MarkerComponentProps = {
     top: Number;
     left: Number;
     itemNumber: Number;
-    id: Number;
+    lineup: Lineup;
 };
 declare type Props = {
     src: string;

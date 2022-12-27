@@ -13,6 +13,7 @@ function ReconLineups(props: { map: ValorantMap }) {
         activeLineup: null,
         sideSelectorOpen: false,
         map: props.map,
+        mapViewingLineup: null,
         filters: {
             difficulty: [],
             usecase: [],
