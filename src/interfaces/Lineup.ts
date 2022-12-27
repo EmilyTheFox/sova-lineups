@@ -7,7 +7,15 @@ export interface Lineup {
         essential: Boolean,
         faking: Boolean,
         retake: Boolean
-    }
+    },
+    landsAt?: {
+        x: number,
+        y: number
+    },
+    shotFrom?: {
+        x: number,
+        y: number
+    },
     map: string,
     result: string,
     video: string,

@@ -11,6 +11,14 @@ const ascent_data: Lineup[] = [
             faking: false,
             retake: false,
         },
+        landsAt: {
+            x: 47.93,
+            y: 19.60
+        },
+        shotFrom: {
+            x: 65.35,
+            y: 18.05
+        },
         map: 'https://i.imgur.com/L8bSkrL.jpg',
         result: "https://i.imgur.com/b7rNGTg.png",
         video: '431576728',
@@ -33,6 +41,14 @@ const ascent_data: Lineup[] = [
             essential: true,
             faking: false,
             retake: false,
+        },
+        landsAt: {
+            x: 47.52,
+            y: 48.32
+        },
+        shotFrom: {
+            x: 50.39,
+            y: 65.63
         },
         map: 'https://i.imgur.com/gM8Rm7X.jpg',
         result: "https://i.imgur.com/7nou3yY.png",
