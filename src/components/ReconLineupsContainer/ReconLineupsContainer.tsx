@@ -21,6 +21,12 @@ import view_split from '../../assets/view_map_buttons/map_split.webp';
 
 import ascent_data from '../../data/reconLineups/ascent';
 import bind_data from '../../data/reconLineups/bind';
+import breeze_data from '../../data/reconLineups/breeze';
+import fracture_data from '../../data/reconLineups/fracture';
+import haven_data from '../../data/reconLineups/haven';
+import icebox_data from '../../data/reconLineups/icebox';
+import pearl_data from '../../data/reconLineups/pearl';
+import split_data from '../../data/reconLineups/split';
 
 
 function ReconLineupsContainer(props: { map: ValorantMap }) {
@@ -48,6 +54,24 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
                 break;
             case ValorantMap.Bind:
                 newState.lineups = bind_data;
+                break;
+            case ValorantMap.Breeze:
+                newState.lineups = breeze_data;
+                break;
+            case ValorantMap.Fracture:
+                newState.lineups = fracture_data;
+                break;
+            case ValorantMap.Haven:
+                newState.lineups = haven_data;
+                break;
+            case ValorantMap.Icebox:
+                newState.lineups = icebox_data;
+                break;
+            case ValorantMap.Pearl:
+                newState.lineups = pearl_data;
+                break;
+            case ValorantMap.Split:
+                newState.lineups = split_data;
                 break;
             default:
                 newState.lineups = []
