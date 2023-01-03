@@ -30,6 +30,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-bottom: 1rem;
+    min-width: 100%;
 }
 
 .image {
