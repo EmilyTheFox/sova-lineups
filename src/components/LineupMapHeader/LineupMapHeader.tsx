@@ -8,6 +8,7 @@ import map_breeze from '../../assets/map_headers/map_breeze.webp';
 import map_fracture from '../../assets/map_headers/map_fracture.webp';
 import map_haven from '../../assets/map_headers/map_haven.webp';
 import map_icebox from '../../assets/map_headers/map_icebox.webp';
+import map_lotus from '../../assets/map_headers/map_lotus.webp';
 import map_pearl from '../../assets/map_headers/map_pearl.webp';
 import map_split from '../../assets/map_headers/map_split.webp';
 import { MapContext } from '../../MapContext';
@@ -41,6 +42,10 @@ function LineupMapHeader(props: { map: ValorantMap }) {
         case ValorantMap.Icebox:
             map = map_icebox;
             location = 'Bennett Island, Russia';
+            break;
+        case ValorantMap.Lotus:
+            map = map_lotus;
+            location = 'Western Ghats, India';
             break;
         case ValorantMap.Pearl:
             map = map_pearl;

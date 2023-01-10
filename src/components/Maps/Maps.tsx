@@ -9,6 +9,7 @@ import map_breeze from '../../assets/map_icons/map_breeze.webp';
 import map_fracture from '../../assets/map_icons/map_fracture.webp';
 import map_haven from '../../assets/map_icons/map_haven.webp';
 import map_icebox from '../../assets/map_icons/map_icebox.webp';
+import map_lotus from '../../assets/map_icons/map_lotus.webp';
 import map_pearl from '../../assets/map_icons/map_pearl.webp';
 import map_split from '../../assets/map_icons/map_split.webp';
 
@@ -44,6 +45,9 @@ function Maps() {
                             </Link>
                             <Link className={classes.link} to={'/icebox'}>
                                 <Map title={'Icebox'} location={'Bennett Island, Russia'} map={map_icebox} />
+                            </Link>
+                            <Link className={classes.link} to={'/lotus'}>
+                                <Map title={'Lotus'} location={'Western Ghats, India'} map={map_lotus} />
                             </Link>
                             <Link className={classes.link} to={'/pearl'}>
                                 <Map title={'Pearl'} location={'Lisbon, Portugal'} map={map_pearl} />

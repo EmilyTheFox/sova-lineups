@@ -11,6 +11,14 @@ const icebox_data: Lineup[] = [
             faking: false,
             retake: false,
         },
+        shotFrom: {
+            x: 17.702,
+            y: 36.761
+        },
+        landsAt: {
+            x: 12.488,
+            y: 50.370
+        },
         map: '',
         result: 'https://i.imgur.com/7UlDQtl.jpg',
         video: '',
@@ -662,7 +670,7 @@ const icebox_data: Lineup[] = [
         difficulty: LineupDifficulty.Medium,
         side: LineupSide.Attacking,
         usecase: {
-            essential: false,
+            essential: true,
             faking: false,
             retake: false,
         },
@@ -688,7 +696,7 @@ const icebox_data: Lineup[] = [
         info: "A better dart to for Green to B Site/Nest. Most other darts for this land further behind the rails and therefor don't fully clear nest if they hug the wall"
     },
     {
-        id: 22,
+        id: 23,
         title: 'Garage to B Site',
         difficulty: LineupDifficulty.Easy,
         side: LineupSide.Attacking,
@@ -719,7 +727,7 @@ const icebox_data: Lineup[] = [
         info: "An okey dart for B site from garage, doesn't scan nest or snowman though"
     },
     {
-        id: 23,
+        id: 24,
         title: 'Green to Orange',
         difficulty: LineupDifficulty.Easy,
         side: LineupSide.Attacking,
@@ -750,12 +758,12 @@ const icebox_data: Lineup[] = [
         info: "A great dart to clear orange from green"
     },
     {
-        id: 24,
+        id: 25,
         title: 'Green to B Back Site & Snowman',
         difficulty: LineupDifficulty.Easy,
         side: LineupSide.Attacking,
         usecase: {
-            essential: false,
+            essential: true,
             faking: false,
             retake: false,
         },
@@ -781,7 +789,7 @@ const icebox_data: Lineup[] = [
         info: "Lovely dart for clearing B back site and snowman"
     },
     {
-        id: 25,
+        id: 26,
         title: 'Hut to B Elbow Rotation',
         difficulty: LineupDifficulty.Easy,
         side: LineupSide.Defending,
@@ -810,6 +818,851 @@ const icebox_data: Lineup[] = [
         bounces: 0,
         charges: 1,
         info: "Dart to check if they're rotating of B if you were kitchen or weren't sure if they were committing to B. Don't use this dart at the start of round, they might get a timing on it"
+    },
+    {
+        id: 27,
+        title: 'Hut to Crane',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: true,
+        },
+        map: '',
+        result: 'https://i.imgur.com/IkGKwGG.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/xcIed6j.jpg',
+                info: 'Stand in this corner on top of hut'
+            },
+            {
+                link: 'https://i.imgur.com/8kFfxez.jpg',
+                info: 'We want the tip of our right bounce diamond to be on this line'
+            },
+            {
+                link: 'https://i.imgur.com/IRVjq54.jpg',
+                info: 'One charge and shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 1,
+        info: "Amazing retake dart as it scans all the spots where attackers usually back off to after planting default"
+    },
+    {
+        id: 28,
+        title: 'Hut to B Elbow',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/wHiULjU.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/dnpBl24.jpg',
+                info: 'Stand in this corner on top of hut'
+            },
+            {
+                link: 'https://i.imgur.com/Hi4FQHk.jpg',
+                info: 'We want to lineup the C of the word Charge with this corner. the left of the C should be on the left side of this right box and the bottom should be barely on the snow'
+            },
+            {
+                link: 'https://i.imgur.com/b2BeXlA.jpg',
+                info: 'One charge and shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 1,
+        info: "Simple dart for scanning B elbow from near boiler/kitchen"
+    },
+    {
+        id: 29,
+        title: 'Hut to Mid Blue',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/mJXbHIC.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/6NVqQ9P.jpg',
+                info: 'Stand in this corner on top of hut'
+            },
+            {
+                link: 'https://i.imgur.com/mcQijSG.jpg',
+                info: 'We want the top of our first charge bar to be at this corner'
+            },
+            {
+                link: 'https://i.imgur.com/twatVjj.jpg',
+                info: 'One charge and shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 1,
+        info: "Super easy dart to scan mid blue from right outside kitchen"
+    },
+    {
+        id: 30,
+        title: 'Kitchen to Mid Blue',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/tKjT4Ic.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/wMCVQWA.jpg',
+                info: 'Stand in this corner in kitchen, might take some effort to get into the corner nicely'
+            },
+            {
+                link: 'https://i.imgur.com/lgH7Pue.jpg',
+                info: 'We want the top of our first charge bar to be at this corner of the indent'
+            },
+            {
+                link: 'https://i.imgur.com/qXZfurK.jpg',
+                info: 'Full charge, double bounce, shoot'
+            }
+        ],
+        bounces: 2,
+        charges: 3,
+        info: "Nice dart to scan mid from kitchen so you can wallbang from inside tube"
+    },
+    {
+        id: 31,
+        title: 'Fast Kitchen to Mid Blue',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/Ix7OjCu.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/B3tZED8.jpg',
+                info: 'Simply stand somewhere in kitchen where you can aim for this gap and shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 3,
+        info: "Nice faster dart to scan mid from kitchen so you can wallbang from inside tube. Not as big of a flex though"
+    },
+    {
+        id: 32,
+        title: 'Snow Pile to Crane',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/RGLHo8a.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/QPmEFg9.jpg',
+                info: 'Stand here at snow pile'
+            },
+            {
+                link: 'https://i.imgur.com/IL9VONH.jpg',
+                info: 'We want to line up the tip of the line left of our drone symbol to be right inside of this 0'
+            },
+            {
+                link: 'https://i.imgur.com/343Rcnl.jpg',
+                info: 'One charge, shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 1,
+        info: "Nice faster dart to scan mid from kitchen so you can wallbang from inside tube. Not as big of a flex though"
+    },
+    {
+        id: 33,
+        title: 'Yellow to B Elbow / Mid',
+        difficulty: LineupDifficulty.Hard,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/QATuAs5.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/JA62R9e.jpg',
+                info: 'Stand in this corner at yellow'
+            },
+            {
+                link: 'https://i.imgur.com/DGu5vcj.jpg',
+                info: 'Aim for this corner of the slanted part of the roof. THEN walk forward until the 01 on the wall is hidden.'
+            },
+            {
+                link: 'https://i.imgur.com/rkkmvq8.jpg',
+                info: 'Aim for the same spot again while crouching, full charge, one bounce, shoot'
+            }
+        ],
+        bounces: 1,
+        charges: 3,
+        info: "Great dart for scanning both B and Mid early into the round. This dart can also be done without the walking step but it'd scan mid a little bit less if you do so. If you miss this dart bounce a lot aim a bit more right and lower"
+    },
+    {
+        id: 34,
+        title: 'Yellow to B Elbow / Green',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/kUFYt4x.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/kgAKRgf.jpg',
+                info: 'Stand in this corner at yellow'
+            },
+            {
+                link: 'https://i.imgur.com/7y6Fi6B.jpg',
+                info: 'We want the tip of our right bounce diamond to line up with this corner of the container clamp'
+            },
+            {
+                link: 'https://i.imgur.com/mwg6cNL.jpg',
+                info: 'Two charge, shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 2,
+        info: "Amazing dart for scanning B Elbow & Green from yellow"
+    },
+    {
+        id: 35,
+        title: 'Yellow to B Elbow / Green',
+        difficulty: LineupDifficulty.Hard,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/RmNoptp.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/IcWQ8jo.jpg',
+                info: 'Stand against yellow and keep walking left until this white container overlaps with the back of this container clamp'
+            },
+            {
+                link: 'https://i.imgur.com/AkZ9Thj.jpg',
+                info: 'We want the top of our 2nd charge bar to be at this spot where the grey and dark grey meet'
+            },
+            {
+                link: 'https://i.imgur.com/BXHDja1.jpg',
+                info: 'Two charges, shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 2,
+        info: "Pretty hard but useful dart to skin mid from yellow"
+    },
+    {
+        id: 36,
+        title: 'Mid to Screens',
+        difficulty: LineupDifficulty.Hard,
+        side: LineupSide.Attacking,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/S4ntmUa.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/hbDvlgf.jpg',
+                info: 'Stand on this big box before the blue container'
+            },
+            {
+                link: 'https://i.imgur.com/moParbG.jpg',
+                info: 'Aim with the tip of the line left of the drone icon at this point, slightly below the container rim'
+            },
+            {
+                link: 'https://i.imgur.com/GBwmY9s.jpg',
+                info: 'Two charges, double bounce, shoot'
+            }
+        ],
+        bounces: 2,
+        charges: 2,
+        info: "Hard lineup for scanning screens and behind 410 from mid, mostly for flexing purposes but actually useful"
+    },
+    {
+        id: 37,
+        title: 'Mid Blue to Boiler',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Attacking,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/BYvGaCH.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/FMpWNeN.jpg',
+                info: 'Stand in front of these boxes'
+            },
+            {
+                link: 'https://i.imgur.com/9N6jDYz.jpg',
+                info: 'We want to aim right above the corner of this black & yellow sticker'
+            },
+            {
+                link: 'https://i.imgur.com/IWflA70.jpg',
+                info: 'Full charge, one bounce, shoot'
+            }
+        ],
+        bounces: 1,
+        charges: 3,
+        info: "Simple lineup for scanning boiler and CT"
+    },
+    {
+        id: 38,
+        title: 'Fast Mid to Boiler',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Attacking,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/AvxXc3R.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/uIeh1zm.jpg',
+                info: 'Stand near blue so you can see the white wall of tube here'
+            },
+            {
+                link: 'https://i.imgur.com/gmFIR2k.jpg',
+                info: 'Simply aim at it at a normal height, full charge, one bounce, shoot'
+            }
+        ],
+        bounces: 1,
+        charges: 3,
+        info: "Simple super fast to execute lineup for scanning boiler"
+    },
+    {
+        id: 39,
+        title: 'Mid to Boiler Alternative',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Attacking,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/XVuIlDl.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/E88Luo8.jpg',
+                info: 'Stand against the wall at this N'
+            },
+            {
+                link: 'https://i.imgur.com/Wpzbl8J.jpg',
+                info: 'We want the top left corner of our left click symbol to line up with the top right of this paper on the wall'
+            },
+            {
+                link: 'https://i.imgur.com/1HFZKVf.jpg',
+                info: 'Once charge, shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 1,
+        info: "An alternative arrow for mid to boiler"
+    },
+    {
+        id: 40,
+        title: 'Mid Blue to Orange & Mid',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Attacking,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/H7kmnmH.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/l4qE6dc.jpg',
+                info: 'Stand in this corner'
+            },
+            {
+                link: 'https://i.imgur.com/tW7tE7J.jpg',
+                info: 'We want the left of our drone charge on this piece of crane sticking out, which will just look like a black dot'
+            },
+            {
+                link: 'https://i.imgur.com/Y4tu2Gw.jpg',
+                info: 'Once charge, shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 1,
+        info: "A really good arrow from mid blue to scan orange, snow pile & mid"
+    },
+    {
+        id: 41,
+        title: 'Mid Blue to Mid Pallet',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Attacking,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/qyk6DAf.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/VbhXywM.jpg',
+                info: 'Stand in this corner'
+            },
+            {
+                link: 'https://i.imgur.com/2gPrMZt.jpg',
+                info: 'We want to make a mental line this part of tube up, and then aim right below the top'
+            },
+            {
+                link: 'https://i.imgur.com/EuK9XFa.jpg',
+                info: 'Full charge, double bounce, shoot'
+            }
+        ],
+        bounces: 2,
+        charges: 3,
+        info: "A quick arrow to scan for weird plays at mid pallet"
+    },
+    {
+        id: 42,
+        title: 'Boiler to Green',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/SzknYby.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/PmtwcKE.jpg',
+                info: 'Stand in this corner at boiler ramp'
+            },
+            {
+                link: 'https://i.imgur.com/h7SccvG.jpg',
+                info: 'We and the line left of our drone to end at this spot'
+            },
+            {
+                link: 'https://i.imgur.com/fF8yVUD.jpg',
+                info: 'One charge, shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 1,
+        info: "A simple arrow to scan B from boiler"
+    },
+    {
+        id: 43,
+        title: 'Boiler to Green & Garage',
+        difficulty: LineupDifficulty.Medium,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/XOBumL4.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/wAh1RpC.jpg',
+                info: 'Stand in this corner on boiler'
+            },
+            {
+                link: 'https://i.imgur.com/REbYyPo.jpg',
+                info: 'Walk slightly right until you can\'t see the white wall from boiler'
+            },
+            {
+                link: 'https://i.imgur.com/DKRSf6q.jpg',
+                info: 'We want to aim the top of our first charge bar between these antenna like things'
+            },
+            {
+                link: 'https://i.imgur.com/TS2w37X.jpg',
+                info: 'One charge, shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 1,
+        info: "An easy to pull off arrow to scan for B pushes/retreats from boiler"
+    },
+    {
+        id: 44,
+        title: 'Boiler to Kitchen & Hall',
+        difficulty: LineupDifficulty.Medium,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/Gyggv7h.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/0z8EmzU.jpg',
+                info: 'Stand at the front left of boiler'
+            },
+            {
+                link: 'https://i.imgur.com/YqdrWSN.jpg',
+                info: 'Walk slightly right until you can fully see this K'
+            },
+            {
+                link: 'https://i.imgur.com/QTIprbd.jpg',
+                info: 'Make this mental line and aim at the tip of it'
+            },
+            {
+                link: 'https://i.imgur.com/xzpUeF7.jpg',
+                info: 'Full charge, double bounce, shoot'
+            }
+        ],
+        bounces: 2,
+        charges: 3,
+        info: "A lovely arrow to scan kitchen & hall from boiler to spot lurkers, you can wallbang kitchen from boiler with a heavy penetration weapon"
+    },
+    {
+        id: 45,
+        title: 'Boiler to Mid & B Green',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: true,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/DQXBMkO.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/SYwxIfk.jpg',
+                info: 'Stand anywhere on or behind boiler'
+            },
+            {
+                link: 'https://i.imgur.com/NJQl2UJ.jpg',
+                info: 'Simply aim slightly above the top left corner of this white container'
+            },
+            {
+                link: 'https://i.imgur.com/VpS9f28.jpg',
+                info: 'Full charge, shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 3,
+        info: "A vital arrow for Sova given he usually plays mid to scan for info on lurks against mid orbs, this arrow is an easy way to spot both mid and B pushes"
+    },
+    {
+        id: 46,
+        title: 'Boiler Ramp to Mid',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/YqNWHyn.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/HI7YG1j.jpg',
+                info: 'Stand in this corner behind boiler'
+            },
+            {
+                link: 'https://i.imgur.com/2wXEHax.jpg',
+                info: 'We want to line up the left of the line between our drone and shock dart with the yellow corner here'
+            },
+            {
+                link: 'https://i.imgur.com/k4QwBWJ.jpg',
+                info: 'One charge, shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 1,
+        info: "Simple dart to mid from behind boiler"
+    },
+    {
+        id: 47,
+        title: 'Common Fast Boiler to Mid Blue',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/SP2AH8J.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/O3uQEgp.jpg',
+                info: 'Stand in this corner left of boiler'
+            },
+            {
+                link: 'https://i.imgur.com/LgVe09j.jpg',
+                info: 'We simply want to aim slightly left of this light'
+            },
+            {
+                link: 'https://i.imgur.com/zZ7uSQL.jpg',
+                info: 'Full charge, one bounce, shoot'
+            }
+        ],
+        bounces: 1,
+        charges: 3,
+        info: "A super well known dart for back boiler to mid blue, this dart is often misused and makes you take time to get back on boiler. Try not to use this dart often, it's best use is for helping an opperator scale up mid if it's clear"
+    },
+    {
+        id: 48,
+        title: 'Boiler to Tube Wallbang',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/ioPnrDa.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/595tRQr.jpg',
+                info: 'Stand pretty much anywhere on the ramp or even on top boiler (if it\'s not too far left)'
+            },
+            {
+                link: 'https://i.imgur.com/2lU4jlI.jpg',
+                info: 'We want to aim for around here on this white bar'
+            },
+            {
+                link: 'https://i.imgur.com/0sVRw34.jpg',
+                info: 'Full charge, double bounce, shoot'
+            }
+        ],
+        bounces: 2,
+        charges: 3,
+        info: "A super easy dart to scan inside of tube, you can wallbang tube with anything including low penetration if you are a good angle like < 75 degrees"
+    },
+    {
+        id: 49,
+        title: 'Mid Pallet to A Belt Wallbang',
+        difficulty: LineupDifficulty.Hard,
+        side: LineupSide.Defending,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/wGIElEx.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/BpEKIhX.jpg',
+                info: 'Stand along this wall at A entrance but walk left until you cant see the wall'
+            },
+            {
+                link: 'https://i.imgur.com/bKXHAnO.jpg',
+                info: 'We want to aim the top right of the INSIDE of our chargebar at this cross section'
+            },
+            {
+                link: 'https://i.imgur.com/DayqFnJ.jpg',
+                info: 'Like this'
+            },
+            {
+                link: 'https://i.imgur.com/JKH36GM.jpg',
+                info: 'Full charge, one bounce, shoot'
+            },
+            {
+                link: 'https://i.imgur.com/Np8SEuH.jpg',
+                info: 'Run to mid pallet and you can wallbang belt with heavy penetration from there'
+            }
+        ],
+        bounces: 2,
+        charges: 3,
+        info: "A super easy dart to scan inside of tube, you can wallbang tube with anything including low penetration if you are a good angle like < 75 degrees"
+    },
+    {
+        id: 50,
+        title: 'T Spawn to A Site Flex',
+        difficulty: LineupDifficulty.Hard,
+        side: LineupSide.Attacking,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/h7h9iwq.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/99JmsgL.jpg',
+                info: 'Stand on exactly this corner in the floor pattern'
+            },
+            {
+                link: 'https://i.imgur.com/DpsbYEh.jpg',
+                info: 'Aim for where my purple dot is'
+            },
+            {
+                link: 'https://i.imgur.com/RgadZfA.jpg',
+                info: 'Full charge, double bounce, shoot'
+            }
+        ],
+        bounces: 2,
+        charges: 3,
+        info: "A pretty hard dart but an absolute flex (and some small use case for faking though they can hear the arrow coming from behind and know you're not at A)"
+    },
+    {
+        id: 51,
+        title: 'T Spawn to B Crane',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Attacking,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/2hy5jXK.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/zzEaUMa.jpg',
+                info: 'Stand against this bar in T spawn'
+            },
+            {
+                link: 'https://i.imgur.com/QHvycBd.jpg',
+                info: 'Align the bottom of your second charge bar with this spot'
+            },
+            {
+                link: 'https://i.imgur.com/NbDVhxT.jpg',
+                info: 'One charge, shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 1,
+        info: "An easy dart to scan some off angles at B when rotating to B"
+    },
+    {
+        id: 52,
+        title: 'T Spawn to Snowman',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Attacking,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/9qyH5cP.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/w5OE8fS.jpg',
+                info: 'Stand in this corner outside B garage'
+            },
+            {
+                link: 'https://i.imgur.com/8eJds1h.jpg',
+                info: 'Look for this triangle'
+            },
+            {
+                link: 'https://i.imgur.com/SSbKB7J.jpg',
+                info: 'We want the dot below our drone bar to be on this triangle'
+            },
+            {
+                link: 'https://i.imgur.com/5bb9ti9.jpg',
+                info: 'Full charge, shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 3,
+        info: "A very slow dart for snowman so you can drone green and by the time you control site it scans for rotating enemies"
+    },
+    {
+        id: 53,
+        title: 'T Spawn to Boiler',
+        difficulty: LineupDifficulty.Easy,
+        side: LineupSide.Attacking,
+        usecase: {
+            essential: false,
+            faking: false,
+            retake: false,
+        },
+        map: '',
+        result: 'https://i.imgur.com/DzKSoV6.jpg',
+        video: '',
+        images: [
+            {
+                link: 'https://i.imgur.com/ct0ylMF.jpg',
+                info: 'Stand in this corner of T spawn'
+            },
+            {
+                link: 'https://i.imgur.com/qEcXJ8S.jpg',
+                info: 'Aim where the roof meets this railing'
+            },
+            {
+                link: 'https://i.imgur.com/yyJuHRK.jpg',
+                info: 'Two charges, shoot'
+            }
+        ],
+        bounces: 0,
+        charges: 2,
+        info: "A simple dart from attacker spawn to boiler"
     },
 
 ];

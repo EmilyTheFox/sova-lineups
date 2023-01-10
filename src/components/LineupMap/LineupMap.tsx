@@ -14,7 +14,7 @@ import bind_layout from '../../assets/map_layouts/bind_layout.svg';
 import breeze_layout from '../../assets/map_layouts/breeze_layout.svg';
 import fracture_layout from '../../assets/map_layouts/fracture_layout.svg';
 import haven_layout from '../../assets/map_layouts/haven_layout.svg';
-import icebox_layout from '../../assets/map_layouts/icebox_layout.svg';
+import icebox_layout from '../../assets/map_layouts/icebox_layout.png';
 import pearl_layout from '../../assets/map_layouts/pearl_layout.svg';
 import split_layout from '../../assets/map_layouts/split_layout.svg';
 

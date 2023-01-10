@@ -44,7 +44,7 @@ var __assign = function () {
     return __assign.apply(this, arguments);
 };
 
-___$insertStyle(".image-marker {\n  position: relative;\n  margin: 0 auto;\n}\n.image-marker__image {\n  margin: 0 auto;\n  width: 100%;\n}\n.image-marker__marker {\n  position: absolute;\n}\n.image-marker__marker--default {\n  width: 25px;\n  height: 25px;\n  background-color: brown;\n  border-radius: 50%;\n  color: white;\n  text-align: center;\n}");
+___$insertStyle(".image-marker {\n  position: relative;\n  margin: 0 auto;\n height: 100%;\n max-height: 100%;\n}\n.image-marker__image {\n  margin: 0 auto;\n display: block;\n  height: 100%;\n max-height: 100%;\n max-width: 100%; }\n.image-marker__marker {\n  position: absolute;\n}\n.image-marker__marker--default {\n  width: 25px;\n  height: 25px;\n  background-color: brown;\n  border-radius: 50%;\n  color: white;\n  text-align: center;\n}");
 
 var calculateMarkerPosition = function (mousePosition, imagePosition, scrollY, bufferLeft, bufferTop) {
     var pixelsLeft = mousePosition.clientX - imagePosition.left;

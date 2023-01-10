@@ -30,6 +30,7 @@ root.render(
                 <Route path="/fracture" element={<ReconLineups map={ValorantMap.Fracture} />} />
                 <Route path="/haven" element={<ReconLineups map={ValorantMap.Haven} />} />
                 <Route path="/icebox" element={<ReconLineups map={ValorantMap.Icebox} />} />
+                <Route path="/lotus" element={<ReconLineups map={ValorantMap.Lotus} />} />
                 <Route path="/pearl" element={<ReconLineups map={ValorantMap.Pearl} />} />
                 <Route path="/split" element={<ReconLineups map={ValorantMap.Split} />} />
 

@@ -37,11 +37,14 @@ function Nav() {
                             <Link to={'/icebox'}>
                                 <h1>06 &nbsp;//&nbsp; Icebox</h1>
                             </Link>
+                            <Link to={'/lotus'}>
+                                <h1>07 &nbsp;//&nbsp; Lotus</h1>
+                            </Link>
                             <Link to={'/pearl'}>
-                                <h1>07 &nbsp;//&nbsp; Pearl</h1>
+                                <h1>08 &nbsp;//&nbsp; Pearl</h1>
                             </Link>
                             <Link to={'/split'}>
-                                <h1>08 &nbsp;//&nbsp; Split</h1>
+                                <h1>09 &nbsp;//&nbsp; Split</h1>
                             </Link>
                         </div>
                     </div>

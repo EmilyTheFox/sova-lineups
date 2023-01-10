@@ -5,6 +5,7 @@ export enum ValorantMap {
     Fracture = 'fracture',
     Haven = 'haven',
     Icebox = 'icebox',
+    Lotus = 'lotus',
     Pearl = 'pearl',
     Split = 'split',
 }
