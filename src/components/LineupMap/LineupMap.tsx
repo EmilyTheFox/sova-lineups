@@ -152,12 +152,12 @@ function LineupMap() {
                             <div className={classes.info_text_container}>
                                 <p className={classes.info_text}>{mapContext.mapState.mapViewingLineup.info}</p>
                             </div>
-                            <div className={classes.view_lineup_how_to}>
-                                <h1 onClick={() => {
-                                    if (mapContext.mapState.mapViewingLineup) {
-                                        setActiveLineup(mapContext.mapState.mapViewingLineup);
-                                    }
-                                }}>View How To</h1>
+                            <div className={classes.view_lineup_how_to} onClick={() => {
+                                if (mapContext.mapState.mapViewingLineup) {
+                                    setActiveLineup(mapContext.mapState.mapViewingLineup);
+                                }
+                            }}>
+                                <h1>View How To</h1>
                             </div>
                         </div>
                         <div className={classes.map_container}>

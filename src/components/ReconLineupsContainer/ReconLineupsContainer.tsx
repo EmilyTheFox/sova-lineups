@@ -25,6 +25,7 @@ import breeze_data from '../../data/reconLineups/breeze';
 import fracture_data from '../../data/reconLineups/fracture';
 import haven_data from '../../data/reconLineups/haven';
 import icebox_data from '../../data/reconLineups/icebox';
+import lotus_data from '../../data/reconLineups/lotus';
 import pearl_data from '../../data/reconLineups/pearl';
 import split_data from '../../data/reconLineups/split';
 
@@ -66,6 +67,9 @@ function ReconLineupsContainer(props: { map: ValorantMap }) {
                 break;
             case ValorantMap.Icebox:
                 newState.lineups = icebox_data;
+                break;
+            case ValorantMap.Lotus:
+                newState.lineups = lotus_data;
                 break;
             case ValorantMap.Pearl:
                 newState.lineups = pearl_data;

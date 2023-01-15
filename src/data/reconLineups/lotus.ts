@@ -1,6 +1,6 @@
 import { Lineup, LineupDifficulty, LineupSide } from "../../interfaces/Lineup";
 
-const haven_data: Lineup[] = [
+const lotus_data: Lineup[] = [
     // {
     //     id: 1,
     //     title: '',
@@ -26,4 +26,4 @@ const haven_data: Lineup[] = [
     // }
 ];
 
-export default haven_data;
+export default lotus_data;
